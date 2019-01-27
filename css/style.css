@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#wrapper {
+    position: relative;
+    width: 100vw;
+    height: 40vw;
+    overflow: hidden;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+}
+
+.layer {
+    position: absolute;
+    width: 100vw;
+    min-height: 40vw;
+    overflow: hidden;
+}
+
+.layer .content-wrapper {
+    position: absolute;
+    width: 100vw;
+    min-height: 40vw;
+}
+
+.layer .content-body {
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #FFFFFF;
+}
+
+.layer img {
+    position: absolute;
+    width: 100vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.layer h1 {
+    font-size: 3vw;
+    font-family: 'Bowlby One', cursive;
+    letter-spacing: 2px;
+}
+
+.designer {
+    background: #222222;
+    z-index: 1;
+}
+
+.designer .content-body {
+    right: 5%;
+}
+
+.designer h1 {
+    color: #EEEEEE;
+}
+
+.developer {
+    background: #EEEEEE;
+    color: #222222;
+    z-index: 2;
+    width: 50vw;
+}
+
+.developer h1 {
+    color: #222222;
+}
+
+.developer .content-body {
+    left: 5%;
+}
+
+.slider {
+    position: absolute;
+    height: 100%;
+    display: block;
+    /*background-color: #506FA4;
+    width: 5px;*/
+    top: 0;
+    left: 50%;
+    z-index: 5;
+}
+
+.skewed .slider {
+    top: 50%;
+    transform: rotate(30deg) translateY(-50%);
+    height: 200%;
+    transform-origin: top;
+}
+
+.skewed .developer {
+    transform: skew(-30deg);
+    margin-left: -1000px;
+    width: calc(50vw + 1000px);
+}
+
+.skewed .developer .content-wrapper {
+    transform: skew(30deg);
+    margin-left: 1000px;
+}
