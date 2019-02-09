@@ -15,12 +15,93 @@ document.addEventListener("DOMContentLoaded", function () {
         handle.style.left = e.clientX + delta + "px";
         topLayer.style.width = e.clientX + skew + delta + "px";
     });
-    // END image slider
 });
 
 $(document).ready(function () {
-    //$(".navbar li").width((100/$(".navbar li").length)+"%");
-    
+
+    $(window).on("scroll", function () {
+
+        var about = $("#about").offset().top - 100;
+        var projects = $("#projects").offset().top - 100;
+        var skills = $("#skills").offset().top - 100;
+        var contact = $("#footer").offset().top - 100;
+
+        if ($(window).scrollTop() > 200) {
+            $("#top").show();
+            $("#top").css({"bottom": ""});
+        } else {
+            $("#top").hide();
+        }
+        if ($(window).scrollTop() <= contact - 10) {
+            $("#bottom").show();
+        } else {
+            $("#bottom").hide();
+            $("#top").css({"bottom": "15px"});
+        }
+
+        if ($(window).width() >= 500) {
+
+            if ($(window).scrollTop() >= about && $(window).scrollTop() <= projects) {
+                $("#btn-about").children(".data-hover").css({
+                    "transform": "rotateX(90deg) translateY(-22px)",
+                    "background-color": "#004377"
+                });
+            } else {
+                $("#btn-about").children(".data-hover").css({
+                    "transform": "",
+                    "background-color": ""
+                });
+            }
+
+            if ($(window).scrollTop() >= projects && $(window).scrollTop() <= skills) {
+                $("#btn-projects").children(".data-hover").css({
+                    "transform": "rotateX(90deg) translateY(-22px)",
+                    "background-color": "#004377"
+                });
+            } else {
+                $("#btn-projects").children(".data-hover").css({
+                    "transform": "",
+                    "background-color": ""
+                });
+            }
+
+            if ($(window).scrollTop() >= skills && $(window).scrollTop() <= contact) {
+                $("#btn-skills").children(".data-hover").css({
+                    "transform": "rotateX(90deg) translateY(-22px)",
+                    "background-color": "#004377"
+                });
+            } else {
+                $("#btn-skills").children(".data-hover").css({
+                    "transform": "",
+                    "background-color": ""
+                });
+            }
+
+            if ($(window).scrollTop() >= contact) {
+                $("#btn-contact").children(".data-hover").css({
+                    "transform": "rotateX(90deg) translateY(-22px)",
+                    "background-color": "#004377"
+                });
+            } else {
+                $("#btn-contact").children(".data-hover").css({
+                    "transform": "",
+                    "background-color": ""
+                });
+            }
+        }
+    });
+
+
+    $("#top").click(function () {
+        $("html, body").animate({
+            scrollTop: $("#toTop").offset().top
+        }, 100);
+    });
+    $("#bottom").click(function () {
+        $("html, body").animate({
+            scrollTop: $("#footer").offset().top - 75
+        }, 100);
+    });
     $("#btn-about").click(function () {
         $("html, body").animate({
             scrollTop: $("#about").offset().top - 75
@@ -41,4 +122,5 @@ $(document).ready(function () {
             scrollTop: $("#footer").offset().top - 75
         }, 100);
     });
+
 });
