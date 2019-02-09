@@ -28,7 +28,9 @@ $(document).ready(function () {
 
         if ($(window).scrollTop() > 200) {
             $("#top").show();
-            $("#top").css({"bottom": ""});
+            $("#top").css({
+                "bottom": ""
+            });
         } else {
             $("#top").hide();
         }
@@ -36,10 +38,12 @@ $(document).ready(function () {
             $("#bottom").show();
         } else {
             $("#bottom").hide();
-            $("#top").css({"bottom": "15px"});
+            $("#top").css({
+                "bottom": "15px"
+            });
         }
 
-        if ($(window).width() >= 500) {
+        if ($(window).width() >= 600) {
 
             if ($(window).scrollTop() >= about && $(window).scrollTop() <= projects) {
                 $("#btn-about").children(".data-hover").css({
@@ -85,6 +89,47 @@ $(document).ready(function () {
             } else {
                 $("#btn-contact").children(".data-hover").css({
                     "transform": "",
+                    "background-color": ""
+                });
+            }
+
+
+        } else if ($(window).width() < 600) {
+            if ($(window).scrollTop() >= about && $(window).scrollTop() <= projects) {
+                $("#btn-about").children(".data-hover").css({
+                    "background-color": "#1BA9DD"
+                });
+            } else {
+                $("#btn-about").children(".data-hover").css({
+                    "background-color": ""
+                });
+            }
+            if ($(window).scrollTop() >= projects && $(window).scrollTop() <= skills) {
+                $("#btn-projects").children(".data-hover").css({
+                    "background-color": "#1BA9DD"
+                });
+            } else {
+                $("#btn-projects").children(".data-hover").css({
+                    "background-color": ""
+                });
+            }
+
+            if ($(window).scrollTop() >= skills && $(window).scrollTop() <= contact) {
+                $("#btn-skills").children(".data-hover").css({
+                    "background-color": "#1BA9DD"
+                });
+            } else {
+                $("#btn-skills").children(".data-hover").css({
+                    "background-color": ""
+                });
+            }
+
+            if ($(window).scrollTop() >= contact) {
+                $("#btn-contact").children(".data-hover").css({
+                    "background-color": "#1BA9DD"
+                });
+            } else {
+                $("#btn-contact").children(".data-hover").css({
                     "background-color": ""
                 });
             }
