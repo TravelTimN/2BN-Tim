@@ -5,124 +5,141 @@
 
     <!-- META TAGS -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="theme-color" content="#000000">
-    <meta itemprop="image" content="img/tim-mixed.png">
-    <meta name="Description" content="Developed by: Tim Nelson">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#01579b">
+    <meta name="author" content="Tim Nelson">
+    <meta name="description" content="Software Developer Portfolio">
+    <meta name="url" content="https://traveltimn.github.io/2BN-Tim">
+    <meta property="og:title" content="Tim Nelson">
+    <meta property="og:description" content="Software Developer Portfolio">
+    <meta property="og:image" content="static/img/tim-mixed.png">
+    <meta property="og:url" content="https://traveltimn.github.io/2BN-Tim">
+    <meta name="twitter:card" content="summary_large_image">
 
     <!-- LINKS -->
-    <link rel='icon' sizes="192x192" href="img/tim-favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/fontawesome.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel='icon' sizes="192x192" href="static/img/tim-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"
+        type="text/css">
+    <link rel="stylesheet" href="static/css/style.css" type="text/css">
 
-    <title>Tim Nelson</title>
+    <title>Tim Nelson | Developer + Designer</title>
 </head>
 
 <body id="toTop">
 
-    <div id="top"><i class="fas fa-chevron-circle-up"></i></div>
-    <div id="bottom"><i class="fas fa-chevron-circle-down"></i></div>
+    <div id="btn-up">
+        <span class="fa-stack">
+            <i class="fas fa-circle light-blue-text text-darken-4 fa-stack-2x"></i>
+            <i class="fas fa-chevron-up fa-lg white-text fa-stack-1x"></i>
+        </span>
+    </div>
 
     <!-- TOP IMG SLIDER -->
-    <header id="wrapper" class="skewed">
+    <header class="skewed">
         <!-- developer -->
-        <div class="layer developer">
-            <div class="content-wrapper">
-                <div class="content-body">
-                    <h1>&lt;developer&gt;</h1>
+        <div class="layer developer grey lighten-4">
+            <div class="content-header">
+                <div class="content-body text-shadow">
+                    <span id="developer" class="grey-text text-darken-4"></span>
                 </div>
-                <img src="img/tim-developer.png" alt="Tim Nelson | Developer">
+                <img src="static/img/tim-developer.png" alt="Tim Nelson | Developer">
             </div>
         </div>
 
         <!-- designer -->
-        <div class="layer designer">
-            <div class="content-wrapper">
+        <div class="layer designer grey darken-4">
+            <div class="content-header">
                 <div class="content-body">
-                    <h1>designer</h1>
+                    <span class="animate-designer grey-text text-lighten-4 text-shadow">
+                        <span>d</span><span>e</span><span>s</span><span>i</span><span>g</span><span>n</span><span>e</span><span>r</span>
+                    </span>
                 </div>
-                <img src="img/tim-designer.png" alt="Tim Nelson | Designer">
+                <img src="static/img/tim-designer.png" alt="Tim Nelson | Designer">
             </div>
-            <div class="slider"></div>
         </div>
     </header>
 
     <!-- NAVBAR -->
-
-
-    <nav id="nav">
-        <ul id="navbar" class="navbar">
-            <li id="btn-about"><span data-hover="About" class="data-hover"><i class="fas fa-info-circle"></i></span></li>
-            <li id="btn-projects"><span data-hover="Projects" class="data-hover"><i class="far fa-object-group"></i></span></li>
-            <li id="btn-skills"><span data-hover="Skills" class="data-hover"><i class="fas fa-graduation-cap"></i></span></li>
-            <li id="btn-contact"><span data-hover="Contact" class="data-hover"><i class="fas fa-at"></i></li>
-            <li id="btn-resume"><span data-hover="Resume" class="data-hover"><i class="fas fa-file-download"></i></span></li>
+    <nav>
+        <ul class="grey-text text-lighten-4">
+            <li id="btn-about">
+                <span data-hover="About" class="data-hover">
+                    <i class="fas fa-info-circle"></i>
+                </span>
+            </li>
+            <li id="btn-projects">
+                <span data-hover="Projects" class="data-hover">
+                    <i class="far fa-object-group"></i>
+                </span>
+            </li>
+            <li id="btn-skills">
+                <span data-hover="Skills" class="data-hover">
+                    <i class="fas fa-graduation-cap"></i>
+                </span>
+            </li>
+            <li id="btn-contact">
+                <span data-hover="Contact" class="data-hover">
+                    <i class="fas fa-at"></i>
+                </span>
+            </li>
+            <li id="btn-resume">
+                <span data-hover="Resume" class="data-hover">
+                    <i class="fas fa-file-download"></i>
+                </span>
+            </li>
         </ul>
     </nav>
 
     <!-- ABOUT -->
-    <section id="about">
+    <section id="about" class="grey darken-4 grey-text text-lighten-4">
         <h1>About</h1>
         <p>
-            I am a Full-Stack Web Developer, with a passion for Front-End UI/UX Design. I love to build pixel-perfect
-            responsive websites and applications, using a combination of semantic code with modern technologies. In
-            addition to web development, I enjoy graphic design, with an emphasis on Adobe software. Whether it's
-            building a wireframe, creating a simple blog, designing a social media avatar, or coding a full-stack
-            website, I'm available for freelance work, so please contact me!
+            Hi, I'm Tim; a full-stack web developer with a passion for creating functional, pixel-perfect, and fully
+            responsive websites and web apps.
+        </p>
+        <p>
+            Whether its creating a simple blog, designing your social media presence, or developing and deploying a
+            complete online solution for your business (both client and server side), I'm available for remote work.
+        </p>
+        <p>
+            So if you'd like to create something unique together, why not get in touch?
         </p>
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects">
+    <section id="projects" class="grey lighten-4 grey-text text-darken-4">
         <h1>Projects</h1>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo explicabo tenetur optio quod eos amet
-            pariatur quia ducimus, deleniti numquam quam quos deserunt aut impedit ipsa, blanditiis temporibus cum.
-            Aperiam, vel a. Tempore esse et repellat assumenda impedit omnis ipsum quasi praesentium repudiandae magni,
-            aliquid, nesciunt explicabo nam dolore tenetur in alias provident atque. Aliquam distinctio vero quas
-            aspernatur, laborum velit corrupti impedit placeat dolores repellendus sed provident quam, voluptate
-            perferendis? Ipsum, eum animi quae voluptatum rerum illum quos fugit qui corporis, molestias id.
-            Consequuntur minima delectus fuga suscipit, commodi soluta beatae maxime labore consectetur aperiam atque
-            voluptatum iure nihil!
+            Lorem ipsum dolor sit amet.
         </p>
     </section>
 
     <!-- SKILLS -->
-    <section id="skills">
+    <section id="skills" class="grey darken-4 grey-text text-lighten-4">
         <h1>Skills</h1>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, reprehenderit maxime natus magnam
-            exercitationem quaerat autem distinctio mollitia modi neque nam, voluptatem et obcaecati vel sit
-            dignissimos iste assumenda iure voluptatibus cumque delectus? Delectus odit blanditiis reprehenderit quasi!
-            Soluta quod modi doloremque earum illo temporibus sint nobis autem veritatis. Ut officiis in nam minus quas
-            itaque labore non saepe, nulla est ad, quae nesciunt, eaque consequatur. Asperiores perferendis quod
-            pariatur illum quia dignissimos consequuntur eius eligendi ut exercitationem placeat, cupiditate provident
-            esse magnam cumque officiis vitae facilis ipsa est qui iste quisquam voluptatibus accusamus nemo. Odio
-            eveniet aliquid repellat libero!
+            Lorem ipsum dolor sit amet.
         </p>
     </section>
 
     <!-- FOOTER -->
-    <footer id="footer">
+    <footer class="black grey-text text-lighten-4">
         <h1>Footer</h1>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quis aperiam, accusamus, dolorem harum
-            corporis quasi libero animi dolorum excepturi quidem. Eum numquam ea sint blanditiis exercitationem nulla
-            quidem dolore, obcaecati, perspiciatis eveniet consequuntur veritatis asperiores distinctio, dignissimos
-            recusandae accusantium doloremque saepe. Labore cumque debitis ad impedit at quisquam officiis ullam veniam
-            quia asperiores officia facere, tempora quam illum iusto, suscipit aperiam, itaque quas optio quaerat nobis
-            magnam! Porro enim in molestias ea quibusdam unde vitae officia, aliquam optio distinctio quaerat
-            laudantium fuga itaque suscipit quasi, pariatur dolores exercitationem quisquam ratione facilis aut
-            sapiente illum, consequatur aliquid. Dolorem, assumenda quas!
+            Lorem ipsum dolor sit amet.
         </p>
     </footer>
 
 
     <!-- SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="static/js/script.js"></script>
 
 </body>
 
