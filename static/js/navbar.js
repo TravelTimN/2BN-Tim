@@ -1,19 +1,11 @@
 $(document).ready(function () {
 
-    // image slider after css animation ends
-    $(".skewed .developer").on("animationend", function () {
-        $("header").on("mousemove", function (e) {
-            delta = (e.clientX - window.innerWidth / 2) * 0.5;
-            $(".developer").css("width", e.clientX + 1000 + delta + "px");
-        });
-    });
-
     // navbar scroll effects
     $(window).on("scroll", function () {
         // toTop button
         if ($(window).scrollTop() > 200) {
             $("#btn-up").css({
-                "right": "25px",
+                "right": "2em",
                 "transform": "rotate(0)"
             });
         } else {
@@ -138,27 +130,5 @@ $(document).ready(function () {
             scrollTop: $("footer").offset().top - 75
         }, 100);
     });
-
-    // animate <developer> in header
-    setTimeout(function () {
-        let developer = ["<developer>"];
-        let typeChar = function () {
-            $("#developer").append(word[char++]);
-            if (char < word.length) {
-                setTimeout(typeChar, 100);
-            } else {
-                typeWord();
-            }
-        };
-        let i = 0;
-        let typeWord = function () {
-            if (i < developer.length) {
-                word = developer[i++];
-                char = 0;
-                typeChar();
-            }
-        };
-        typeWord();
-    }, 500);
 
 });

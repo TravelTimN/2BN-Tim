@@ -8,8 +8,9 @@
     --blueDark3: 21, 101, 192;
     --blueDark4: 13, 71, 161;
     --lightBlueDark4: 1, 87, 155;
-    /* --greyLight4: 245, 245, 245; */
-    /* --greyDark4: 33, 33, 33; */
+    --greyLight4: 245, 245, 245;
+    --greyDark3: 66, 66, 66;
+    --greyDark4: 33, 33, 33;
     --black: 0, 0, 0;
     --white: 255, 255, 255;
     --fontDefault: "Open Sans", Verdana, Geneva, Tahoma, sans-serif, serif;
@@ -19,7 +20,7 @@
 }
 
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     scroll-behavior: smooth;
     font-family: var(--fontDefault);
@@ -30,6 +31,7 @@ body {
     min-height: 100vh;
     flex-direction: column;
     overflow-x: hidden;
+    background-color: rgba(var(--greyDark4), 1);
 }
 
 *::selection {
@@ -80,7 +82,7 @@ h6 {
     font-size: 1.75em;
     cursor: pointer;
     position: fixed;
-    bottom: 1em;
+    bottom: 2em;
     right: -3em;
     opacity: 0.5;
     z-index: 100;
@@ -218,6 +220,8 @@ nav {
     position: sticky;
     height: 50px;
     line-height: 50px;
+    font-weight: bold;
+    z-index: 100;
     background-color: rgba(var(--lightBlueDark4), 1);
     box-shadow: 0 4px 16px 0 rgba(var(--lightBlueDark4), 0.5);
 }
@@ -276,31 +280,121 @@ nav ul li:focus .data-hover {
     background-color: rgba(var(--blueDark1), 1);
 }
 
-/*----- -----*/
+/*----- sections -----*/
 section {
     padding: 1em;
     width: 100%;
+    margin-top: 3vh;
+    margin-bottom: 15vh;
 }
 
-/*----- about -----*/
-#about {
-    min-height: 150vh;
+.parallax-container {
+    height: 250px;
 }
 
-/*----- projects -----*/
-#projects {
-    min-height: 150vh;
+.parallax-container img {
+    width: 100vw;
+}
+
+.card-custom {
+    margin: 2em auto;
+    padding: 25px;
+    background-color: rgba(var(--white), 1);
+    border-radius: 8px;
+    border-top: 3px solid rgba(var(--blueDark4), 0.75);
+    border-bottom: 3px solid rgba(var(--blueDark4), 0.75);
+    box-shadow: 0 0 15px 5px rgba(var(--black), 1);
 }
 
 /*----- skills -----*/
-#skills {
-    min-height: 150vh;
+.hexagons-6x,
+.hexagons-5x {
+    overflow: hidden;
+    width: 95%;
+    margin: -3% 7.5%;
 }
+
+.hexagons-6x li,
+.hexagons-5x li {
+    position: relative;
+    list-style-type: none;
+    margin: 0 0.5%;
+    width: 13.92%; /* (100-2.5) / 3.5 / 2 */
+    padding-bottom: 16.07%; /* ^width / 0.866 / 2 */
+    float: left;
+    overflow: hidden;
+    transform: rotate(-60deg) skewY(30deg);
+}
+
+.hexagons-6x li *,
+.hexagons-5x li * {
+    position: absolute;
+}
+
+.hexagons-6x li div,
+.hexagons-5x li div {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    color: rgba(var(--greyLight4), 1);
+    transform: skewY(-30deg) rotate(60deg);
+}
+
+.hexagons-6x li img,
+.hexagons-5x li img {
+    left: -100%;
+    right: -100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: rgba(var(--greyLight4), 1);
+}
+
+.hexagons-6x li div h1,
+.hexagons-5x li div h1 {
+    opacity: 0;
+    top: -25vw;
+    width: 100%;
+    font-size: 2vw;
+    line-height: 20vw;
+    text-shadow: var(--textShadow);
+    transition: var(--transAll);
+    background-color: rgba(var(--blueDark4), 0.8);
+}
+
+.hexagons-6x li:last-child {
+    margin-right: 5%;
+}
+
+.hexagons-5x {
+    margin-left: 14.5%;
+    margin-top: -3%;
+}
+
+.hexagons-6x li div:hover h1,
+.hexagons-5x li div:hover h1 {
+    top: -5vw;
+    opacity: 1;
+}
+
+/*----- about -----*/
+/* #about {
+    min-height: 150vh;
+} */
+
+/*----- projects -----*/
+/* #projects {
+    min-height: 150vh;
+} */
+
+/*----- skills -----*/
+/* #skills {
+    min-height: 150vh;
+} */
 
 /*----- footer -----*/
 footer {
-    min-height: 100vh;
-    width: 100%;
+    min-height: 50vh;
 }
 
 /*----- MEDIA QUERIES -----*/
