@@ -1,5 +1,5 @@
 /*----- @imports -----*/
-@import url('https://fonts.googleapis.com/css?family=Bowlby+One|Open+Sans:600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One|Open+Sans:600,700|Permanent+Marker&display=swap');
 
 /*----- split image -----*/
 :root {
@@ -15,6 +15,7 @@
     --white: 255, 255, 255;
     --fontDefault: "Open Sans", Verdana, Geneva, Tahoma, sans-serif, serif;
     --fontBowlby: "Bowlby One", cursive;
+    --fontMarker: "Permanent Marker", cursive;
     --textShadow: 2px 2px 2px rgba(var(--black), 0.5);
     --transAll: all 0.3s ease-in-out;
 }
@@ -71,6 +72,14 @@ h5 {
 
 h6 {
     font-size: .67em;
+}
+
+.font-bowlby {
+    font-family: var(--fontBowlby);
+}
+
+.font-marker {
+    font-family: var(--fontMarker);
 }
 
 .text-shadow {
@@ -281,15 +290,46 @@ nav ul li:focus .data-hover {
 }
 
 /*----- sections -----*/
+#badge-container {
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 1em;
+    border: 5px solid rgba(var(--white), 1);
+}
+
+#badge-top {
+    padding: 0.5em 4em;
+    margin: 0 auto;
+    font-size: 1.5em;
+}
+
+#badge-top-large {
+    font-size: 2em;
+    line-height: 0.75;
+    letter-spacing: 4px;
+    padding-left: 5px;
+}
+
+#badge-name {
+    font-size: 6em;
+    line-height: 1;
+}
+
+#badge-bottom {
+    height: 1.5em;
+    margin: 0 auto;
+}
+
 section {
     padding: 1em;
     width: 100%;
     margin-top: 3vh;
-    margin-bottom: 15vh;
+    margin-bottom: 5vw;
+    /* overflow-x: hidden; */
 }
 
 .parallax-container {
-    height: 250px;
+    height: 20vw;
 }
 
 .parallax-container img {
