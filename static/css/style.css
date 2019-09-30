@@ -290,35 +290,6 @@ nav ul li:focus .data-hover {
 }
 
 /*----- sections -----*/
-#badge-container {
-    width: fit-content;
-    margin: 0 auto;
-    border-radius: 1em;
-    border: 5px solid rgba(var(--white), 1);
-}
-
-#badge-top {
-    padding: 0.5em 4em;
-    margin: 0 auto;
-    font-size: 1.5em;
-}
-
-#badge-top-large {
-    font-size: 2em;
-    line-height: 0.75;
-    letter-spacing: 4px;
-    padding-left: 5px;
-}
-
-#badge-name {
-    font-size: 6em;
-    line-height: 1;
-}
-
-#badge-bottom {
-    height: 1.5em;
-    margin: 0 auto;
-}
 
 section {
     padding: 1em;
