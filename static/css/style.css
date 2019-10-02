@@ -1,5 +1,5 @@
 /*----- @imports -----*/
-@import url('https://fonts.googleapis.com/css?family=Bowlby+One|Open+Sans:600,700|Permanent+Marker&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Bowlby+One|Montserrat:400,600,700|Open+Sans:400,600,700&display=swap");
 
 /*----- split image -----*/
 :root {
@@ -7,6 +7,7 @@
     --blueDark2: 25, 118, 210;
     --blueDark3: 21, 101, 192;
     --blueDark4: 13, 71, 161;
+    --lightBlue: 3, 169, 244;
     --lightBlueDark4: 1, 87, 155;
     --greyLight4: 245, 245, 245;
     --greyDark3: 66, 66, 66;
@@ -15,7 +16,7 @@
     --white: 255, 255, 255;
     --fontDefault: "Open Sans", Verdana, Geneva, Tahoma, sans-serif, serif;
     --fontBowlby: "Bowlby One", cursive;
-    --fontMarker: "Permanent Marker", cursive;
+    --fontMontserrat: "Montserrat", sans-serif;
     --textShadow: 2px 2px 2px rgba(var(--black), 0.5);
     --transAll: all 0.3s ease-in-out;
 }
@@ -24,6 +25,7 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    box-sizing: border-box;
     font-family: var(--fontDefault);
 }
 
@@ -78,16 +80,25 @@ h6 {
     font-family: var(--fontBowlby);
 }
 
-.font-marker {
-    font-family: var(--fontMarker);
-}
-
 .text-shadow {
     text-shadow: var(--textShadow);
 }
 
-/*----- toTop button -----*/
-#btn-up {
+.active-section {
+    color: rgba(var(--lightBlue), 1);
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+/*----- top button -----*/
+#btn-top {
     font-size: 1.75em;
     cursor: pointer;
     position: fixed;
@@ -100,7 +111,7 @@ h6 {
     transition: var(--transAll);
 }
 
-#btn-up:hover {
+#btn-top:hover {
     opacity: 1;
 }
 
@@ -227,66 +238,77 @@ header {
 nav {
     top: 0;
     position: sticky;
-    height: 50px;
-    line-height: 50px;
     font-weight: bold;
     z-index: 100;
-    background-color: rgba(var(--lightBlueDark4), 1);
+    padding: 0 5%;
+    transition: var(--transAll);
+    background-color: rgba(var(--black), 0.9);
     box-shadow: 0 4px 16px 0 rgba(var(--lightBlueDark4), 0.5);
 }
 
-nav i {
-    font-size: 2em;
-    width: 19vw;
-    vertical-align: middle;
-    height: unset;
+nav:hover {
+    background-color: rgba(var(--black), 1);
 }
 
-nav ul li {
-    width: 20%;
-    perspective: 1000px;
-    position: relative;
-    display: inline-block;
-    letter-spacing: 1.5px;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    text-shadow: var(--textShadow);
-    font-family: var(--fontBowlby);
+nav ul {
+    display: flex;
+    justify-content: space-between;
 }
 
-nav ul li .data-hover {
-    position: relative;
-    display: inline-block;
-    height: 50px;
-    background-color: rgba(var(--lightBlueDark4), 1);
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    transform-origin: 50% 0;
-    transform-style: preserve-3d;
+nav ul a {
+    font-family: var(--fontMontserrat);
+    font-size: 1.5em;
+    padding: 0;
+    letter-spacing: 5px;
+    max-height: 80px;
     transition: var(--transAll);
 }
 
-nav ul li .data-hover::before {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    font-size: 1.25em;
-    transition: none;
-    transform: rotateX(-90deg);
-    transform-origin: 50% 0;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
+nav ul a:hover {
+    background-color: transparent;
+    color: rgba(var(--lightBlueDark4), 1);
 }
 
-nav ul li:hover .data-hover,
-nav ul li:focus .data-hover {
-    transform: none;
-    background-color: rgba(var(--blueDark1), 1);
+nav .sidenav-trigger {
+    font-size: 2em;
+}
+
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* border-left: 1em solid rgba(var(--lightBlue), 0.5); */
+}
+
+.sidenav li {
+    line-height: unset;
+}
+
+.sidenav li a,
+.sidenav li a i {
+    color: rgba(var(--white), 1);
+    transition: var(--transAll);
+}
+
+.sidenav-overlay {
+    background-color: rgba(var(--black), 0.9);
+}
+
+.sidenav-header {
+    padding: 10px 0;
+}
+
+.sidenav li a {
+    border-left: 0 solid rgba(var(--lightBlueDark4), 1);
+}
+
+.sidenav li:not(.active):hover a {
+    border-left: 10px solid rgba(var(--lightBlueDark4), 1);
+    color: rgba(var(--lightBlueDark4), 1);
+}
+
+.sidenav .divider {
+    margin: 0 auto;
 }
 
 /*----- sections -----*/
@@ -403,6 +425,11 @@ section {
     min-height: 150vh;
 } */
 
+/*----- contact -----*/
+#contact {
+    min-height: 150vh;
+}
+
 /*----- footer -----*/
 footer {
     min-height: 50vh;
@@ -411,27 +438,7 @@ footer {
 /*----- MEDIA QUERIES -----*/
 
 /* >600px Materialize Tablet size (.m) */
-@media (min-width: 600px) {
-    nav {
-        background-color: rgba(var(--black), 1);
-    }
-
-    nav ul li .data-hover::before {
-        content: attr(data-hover);
-        transition: var(--transAll);
-        background-color: rgba(var(--blueDark1), 1);
-    }
-
-    nav ul li:hover .data-hover,
-    nav ul li:focus .data-hover {
-        transform: rotateX(90deg) translateY(-22px);
-    }
-
-    nav ul li:hover .data-hover::before,
-    nav ul li:focus .data-hover::before {
-        background-color: rgba(var(--blueDark1), 1);
-    }
-}
+@media (min-width: 600px) {}
 
 /* >992px Materialize Desktop size (.l) */
 @media (min-width: 992px) {}

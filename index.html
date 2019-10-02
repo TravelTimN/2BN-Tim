@@ -29,16 +29,16 @@
     <title>Tim Nelson | Developer + Designer</title>
 </head>
 
-<body id="toTop">
+<body id="top">
 
-    <div id="btn-up">
+    <div id="btn-top">
         <span class="fa-stack">
             <i class="fas fa-circle light-blue-text text-darken-4 fa-stack-2x"></i>
             <i class="fas fa-chevron-up fa-lg white-text fa-stack-1x"></i>
         </span>
     </div>
 
-    <!-- TOP IMG SLIDER -->
+    <!-- IMAGE SLIDER -->
     <header class="skewed">
         <!-- developer -->
         <div class="layer developer grey lighten-4">
@@ -65,34 +65,59 @@
 
     <!-- NAVBAR -->
     <nav>
-        <ul class="grey-text text-lighten-4">
-            <li id="btn-about">
-                <span data-hover="About" class="data-hover">
-                    <i class="fas fa-info-circle"></i>
-                </span>
-            </li>
-            <li id="btn-projects">
-                <span data-hover="Projects" class="data-hover">
-                    <i class="far fa-object-group"></i>
-                </span>
-            </li>
-            <li id="btn-skills">
-                <span data-hover="Skills" class="data-hover">
-                    <i class="fas fa-graduation-cap"></i>
-                </span>
-            </li>
-            <li id="btn-contact">
-                <span data-hover="Contact" class="data-hover">
-                    <i class="fas fa-at"></i>
-                </span>
-            </li>
-            <li id="btn-resume">
-                <span data-hover="Resume" class="data-hover">
-                    <i class="fas fa-file-download"></i>
-                </span>
-            </li>
-        </ul>
+        <!-- <div class="nav-wrapper"> -->
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger right">
+                MENU <i class="fas fa-bars fa-lg" aria-hidden="true"></i>
+            </a>
+            <ul class="hide-on-med-and-down upper">
+                <li><a href="#top" title="Home" id="navlink-top">Home</a></li>
+                <li class="bullet">•</li>
+                <li><a href="#about" title="About" id="navlink-about">About</a></li>
+                <li class="bullet">•</li>
+                <li><a href="#projects" title="Projects" id="navlink-projects">Projects</a></li>
+                <li class="bullet">•</li>
+                <li><a href="#skills" title="Skills" id="navlink-skills">Skills</a></li>
+                <li class="bullet">•</li>
+                <li><a href="#contact" title="Contact" id="navlink-contact">Contact</a></li>
+                <li class="bullet">•</li>
+                <li><a href="#resume" title="Resume" id="navlink-Resume">Resume</a></li>
+            </ul>
+        <!-- </div> -->
     </nav>
+
+    <!-- SIDENAV -->
+    <ul class="sidenav grey darken-4 center-align" id="mobile-demo">
+        <li class="sidenav-header sidenav-close white-text">
+            <h1>Tim Nelson</h1>
+        </li>
+        <li><div class="divider black"></div></li>
+        <li class="sidenav-close">
+            <a href="#top"><span class="bold upper">Home</span></a>
+        </li>
+        <li><div class="divider black"></div></li>
+        <li class="sidenav-close">
+            <a href="#about"><span class="bold upper">About</span></a>
+        </li>
+        <li><div class="divider black"></div></li>
+        <li class="sidenav-close">
+            <a href="#projects"><span class="bold upper">Projects</span></a>
+        </li>
+        <li><div class="divider black"></div></li>
+        <li class="sidenav-close">
+            <a href="#skills"><span class="bold upper">Skills</span></a>
+        </li>
+        <li><div class="divider black"></div></li>
+        <li class="sidenav-close">
+            <a href="#contact"><span class="bold upper">Contact</span></a>
+        </li>
+        <li><div class="divider black"></div></li>
+        <li class="sidenav-close">
+            <a href="#resume"><span class="bold upper">Resume</span></a>
+        </li>
+        <li><div class="divider black"></div></li>
+
+        <li class="sidenav-footer grey darken-4"></li>
+    </ul>
 
     <!-- ABOUT -->
     <section id="about">
@@ -132,6 +157,9 @@
 
     <!-- SKILLS -->
     <section id="skills"></section>
+
+    <!-- CONTACT -->
+    <section id="contact"></section>
 
     <!-- FOOTER -->
     <footer class="black grey-text text-lighten-4">

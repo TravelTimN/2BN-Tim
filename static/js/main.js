@@ -3,6 +3,11 @@ $(document).ready(function () {
     // materialize
     function initMaterialize() {
         $(".parallax").parallax();
+        $(".sidenav").sidenav({
+            edge: "right",
+            draggable: true,
+            preventScrolling: true
+        });
     }
     initMaterialize();
 
