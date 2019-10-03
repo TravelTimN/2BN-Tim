@@ -121,6 +121,7 @@ header {
     width: 100%;
     height: 30vw;
     overflow: hidden;
+    z-index: 101;
 }
 
 .layer {
@@ -276,8 +277,7 @@ nav .sidenav-trigger {
 .sidenav {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    /* border-left: 1em solid rgba(var(--lightBlue), 0.5); */
+    border-left: 1em solid rgba(var(--black), 0.5);
 }
 
 .sidenav li {
@@ -302,9 +302,13 @@ nav .sidenav-trigger {
     border-left: 0 solid rgba(var(--lightBlueDark4), 1);
 }
 
-.sidenav li:not(.active):hover a {
+.sidenav li:hover a {
     border-left: 10px solid rgba(var(--lightBlueDark4), 1);
-    color: rgba(var(--lightBlueDark4), 1);
+    color: rgba(var(--lightBlue), 1);
+}
+
+.sidenav li a i {
+    float: unset;
 }
 
 .sidenav .divider {
