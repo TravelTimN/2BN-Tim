@@ -19,7 +19,7 @@ $(document).ready(function () {
     });
 
     // update navlinks if section in-view
-    $(window).on("scroll resize", function () {
+    $(window).on("scroll resize load", function () {
         // scroll to top button
         if ($(window).scrollTop() > 300) {
             $("#btn-top").css({

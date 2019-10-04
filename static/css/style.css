@@ -104,7 +104,7 @@ h6 {
     position: fixed;
     bottom: 2em;
     right: -3em;
-    opacity: 0.5;
+    opacity: 0.75;
     z-index: 100;
     text-shadow: var(--textShadow);
     transform: rotate(180deg);
@@ -270,6 +270,7 @@ nav ul a:hover {
     color: rgba(var(--lightBlueDark4), 1);
 }
 
+
 nav .sidenav-trigger {
     font-size: 2em;
 }
@@ -315,8 +316,31 @@ nav .sidenav-trigger {
     margin: 0 auto;
 }
 
-/*----- sections -----*/
+nav .brand-logo {
+    letter-spacing: 2px;
+    font-size: 2.5em;
+}
 
+nav .brand-logo span {
+    display: inline-flex;
+    font-family: var(--fontMontserrat);
+}
+
+nav .brand-logo span:nth-child(even) {
+    overflow: hidden;
+    letter-spacing: -1em;
+    transition: var(--transAll);
+}
+
+nav:hover .brand-logo span:nth-child(even) {
+    letter-spacing: unset;
+}
+
+nav:hover .brand-logo span:nth-child(4) {
+    transition-delay: 0.2s;
+}
+
+/*----- sections -----*/
 section {
     padding: 1em;
     width: 100%;
