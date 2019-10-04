@@ -1,5 +1,5 @@
 /*----- @imports -----*/
-@import url("https://fonts.googleapis.com/css?family=Bowlby+One|Montserrat:400,600,700|Open+Sans:400,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bowlby+One|Permanent+Marker|Montserrat:400,600,700|Open+Sans:400,600,700&display=swap");
 
 /*----- split image -----*/
 :root {
@@ -17,6 +17,7 @@
     --fontDefault: "Open Sans", Verdana, Geneva, Tahoma, sans-serif, serif;
     --fontBowlby: "Bowlby One", cursive;
     --fontMontserrat: "Montserrat", sans-serif;
+    --fontPermanentMarker: "Permanent Marker", sans-serif;
     --textShadow: 2px 2px 2px rgba(var(--black), 0.5);
     --transAll: all 0.3s ease-in-out;
 }
@@ -80,6 +81,14 @@ h6 {
     font-family: var(--fontBowlby);
 }
 
+.font-montserrat {
+    font-family: var(--fontMontserrat);
+}
+
+.font-permanentmarker {
+    font-family: var(--fontPermanentMarker);
+}
+
 .text-shadow {
     text-shadow: var(--textShadow);
 }
@@ -104,8 +113,8 @@ h6 {
     position: fixed;
     bottom: 2em;
     right: -3em;
-    opacity: 0.75;
-    z-index: 100;
+    opacity: 0.6;
+    z-index: 102;
     text-shadow: var(--textShadow);
     transform: rotate(180deg);
     transition: var(--transAll);
@@ -244,7 +253,7 @@ nav {
     padding: 0 5%;
     transition: var(--transAll);
     background-color: rgba(var(--black), 0.9);
-    box-shadow: 0 4px 16px 0 rgba(var(--lightBlueDark4), 0.5);
+    box-shadow: 0 4px 16px 0 rgba(var(--blueDark4), 0.5);
 }
 
 nav:hover {
@@ -326,13 +335,13 @@ nav .brand-logo span {
     font-family: var(--fontMontserrat);
 }
 
-nav .brand-logo span:nth-child(even) {
+nav .brand-logo span.logo-span-hidden {
     overflow: hidden;
     letter-spacing: -1em;
     transition: var(--transAll);
 }
 
-nav:hover .brand-logo span:nth-child(even) {
+nav:hover .brand-logo span.logo-span-hidden {
     letter-spacing: unset;
 }
 
@@ -347,6 +356,19 @@ section {
     margin-top: 3vh;
     margin-bottom: 5vw;
     /* overflow-x: hidden; */
+}
+
+.section-heading {
+    background-color: rgba(var(--lightBlueDark4), 1);
+    color: rgba(var(--white), 1);
+    padding: 5px 10px;
+    text-align: center;
+    border: 3px solid rgba(var(--white), 1);
+    box-shadow: 0 0 0 3px rgba(var(--lightBlueDark4), 1);
+}
+
+.section-heading-h1 {
+    margin: 2em auto;
 }
 
 .parallax-container {
@@ -439,9 +461,32 @@ section {
 }
 
 /*----- about -----*/
-/* #about {
-    min-height: 150vh;
-} */
+#about {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.polaroid {
+    float: left;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 0.75em;
+    filter: grayscale(100%);
+    background-color: rgba(var(--white), 1);
+    transition: var(--transAll);
+    transform: scale(0.75) rotate(-5deg);
+    box-shadow: 0 8px 20px rgba(var(--black), 1);
+}
+
+.polaroid .font-permanentmarker {
+    letter-spacing: 5px;
+}
+
+.polaroid:hover {
+    filter: grayscale(0%);
+    transform: scale(0.95) rotate(0);
+}
 
 /*----- projects -----*/
 /* #projects {
@@ -455,12 +500,12 @@ section {
 
 /*----- contact -----*/
 #contact {
-    min-height: 150vh;
+    min-height: 50vh;
 }
 
 /*----- footer -----*/
 footer {
-    min-height: 50vh;
+    min-height: 25vh;
 }
 
 /*----- MEDIA QUERIES -----*/
