@@ -6,16 +6,20 @@
     <!-- META TAGS -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
     <meta name="theme-color" content="#01579B">
     <meta name="author" content="Tim Nelson">
-    <meta name="description" content="Software Developer Portfolio">
+    <meta name="description" content="Tim Nelson | Full-Stack Software Developer | Dublin, Ireland">
     <meta name="url" content="https://traveltimn.github.io/2BN-Tim">
     <meta property="og:title" content="Tim Nelson">
-    <meta property="og:description" content="Software Developer Portfolio">
+    <meta property="og:description" content="Tim Nelson | Full-Stack Software Developer | Dublin, Ireland">
     <meta property="og:image" content="static/img/tim-nelson.png">
+    <meta property="og:type" content="website">
     <meta property="og:url" content="https://traveltimn.github.io/2BN-Tim">
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Tim Nelson">
+    <meta name="twitter:description" content="Tim Nelson | Full-Stack Software Developer | Dublin, Ireland">
+    <meta name="twitter:image" content="static/img/tim-nelson.png">
 
     <!-- LINKS -->
     <link rel='icon' sizes="192x192" href="static/img/favicon.png" type="image/x-icon">
@@ -26,7 +30,7 @@
         type="text/css">
     <link rel="stylesheet" href="static/css/style.css" type="text/css">
 
-    <title>Tim Nelson | Developer + Designer</title>
+    <title>Tim Nelson | Full-Stack Software Developer</title>
 </head>
 
 <body id="top">
@@ -67,7 +71,7 @@
     <nav>
         <div class="nav-wrapper">
             <div class="brand-logo hide-on-large-only left light-blue-text text-shadow">
-                <span class="white-text">&lt;</span><span>T</span><span class="logo-span-hidden">im&nbsp;</span><span>N</span><span class="logo-span-hidden">elson</span><span class="white-text">&gt;</span>
+                <small class="white-text">&lt;</small><span>T</span><span class="hide-span">im&nbsp;</span><span>N</span><span class="hide-span">elson</span><small class="white-text">&gt;</small>
             </div>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger right">
                 <i class="fas fa-bars fa-lg" aria-hidden="true"></i>
@@ -77,7 +81,7 @@
                 <li class="bullet">•</li>
                 <li><a href="#about" title="About" id="navlink-about">About</a></li>
                 <li class="bullet">•</li>
-                <li><a href="#projects" title="Projects" id="navlink-projects">Projects</a></li>
+                <li><a href="#portfolio" title="Portfolio" id="navlink-portfolio">Portfolio</a></li>
                 <li class="bullet">•</li>
                 <li><a href="#skills" title="Skills" id="navlink-skills">Skills</a></li>
                 <li class="bullet">•</li>
@@ -91,7 +95,7 @@
     <!-- SIDENAV -->
     <ul class="sidenav grey darken-4" id="mobile-demo">
         <li class="sidenav-header sidenav-close center-align white-text text-shadow">
-            <h1>&lt;<span class="light-blue-text">Tim Nelson</span>&gt;</h1>
+            <h1><small>&lt;</small><span class="light-blue-text">Tim Nelson</span><small>&gt;</small></h1>
         </li>
         <li>
             <div class="divider black"></div>
@@ -115,9 +119,9 @@
             <div class="divider black"></div>
         </li>
         <li class="sidenav-close">
-            <a href="#projects">
+            <a href="#portfolio">
                 <i class="far fa-object-group fa-lg fa-fw" aria-hidden="true"></i>
-                <span class="bold upper">Projects</span>
+                <span class="bold upper">Portfolio</span>
             </a>
         </li>
         <li>
@@ -158,16 +162,19 @@
 
         <!-- ABOUT -->
         <section id="about">
-            <h1 class="center-align text-shadow section-heading-h1">
-                <span class="section-heading upper font-montserrat text-shadow">About</span>
+            <h1 class="center-align text-shadow section-heading">
+                <span class="heading-span upper font-montserrat text-shadow">About</span>
             </h1>
             <div class="row">
-                <div class="col s12 m5 pm">
+                <div class="col s12 m6">
                     <span class="polaroid">
+                        <div class="tape-top-left"></div>
+                        <div class="tape-top-right"></div>
                         <img src="static/img/tim.png" alt="Tim Nelson" class="responsive-img">
-                        <span class="font-permanentmarker">Tim Nelson</span>
                         <br>
-                        <small><em>full-stack developer</em></small>
+                        <span class="font-permanent-marker">Tim Nelson</span>
+                        <br>
+                        <h6><em>full-stack<br>software developer</em></h6>
                     </span>
                 </div>
                 <div class="col s12 m6 grey-text text-lighten-4">
@@ -189,12 +196,10 @@
             </div>
         </section>
 
-        <!-- PROJECTS -->
-        <section id="projects">
-            <h1 class="center-align text-shadow section-heading-h1">
-                <span class="section-heading upper font-montserrat text-shadow">Projects</span>
-            </h1>
-            <ul>
+        <!-- PORTFOLIO -->
+        <section id="portfolio">
+
+            <!-- <ul>
                 <li>MS1</li>
                 <li>MS2</li>
                 <li>MS3*</li>
@@ -202,7 +207,75 @@
                 <li>MS5</li>
                 <li>Bearly Escaped</li>
                 <li>Bauhaus100</li>
+            </ul> -->
+
+            <h1 class="center-align text-shadow section-heading">
+                <span class="heading-span upper font-montserrat text-shadow">Portfolio</span>
+            </h1>
+
+            <ul class="portfolio-list text-shadow">
+                <li>
+                    <figure>
+                        <img src="static/img/portfolio/placeholder.png" alt="">
+                        <figcaption>
+                            <i class="fas fa-envelope fa-lg fa-fw"></i>
+                            <h4>smaller</h4>
+                            <h2>larger</h2>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="static/img/portfolio/placeholder.png" alt="">
+                        <figcaption>
+                            <i class="fas fa-envelope fa-lg fa-fw"></i>
+                            <h4>smaller</h4>
+                            <h2>larger</h2>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="static/img/portfolio/placeholder.png" alt="">
+                        <figcaption>
+                            <i class="fas fa-envelope fa-lg fa-fw"></i>
+                            <h4>smaller</h4>
+                            <h2>larger</h2>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="static/img/portfolio/placeholder.png" alt="">
+                        <figcaption>
+                            <i class="fas fa-envelope fa-lg fa-fw"></i>
+                            <h4>smaller</h4>
+                            <h2>larger</h2>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="static/img/portfolio/placeholder.png" alt="">
+                        <figcaption>
+                            <i class="fas fa-envelope fa-lg fa-fw"></i>
+                            <h4>smaller</h4>
+                            <h2>larger</h2>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="static/img/portfolio/placeholder.png" alt="">
+                        <figcaption>
+                            <i class="fas fa-envelope fa-lg fa-fw"></i>
+                            <h4>smaller</h4>
+                            <h2>larger</h2>
+                        </figcaption>
+                    </figure>
+                </li>
             </ul>
+
         </section>
 
         <section class="parallax-container">
@@ -211,15 +284,15 @@
 
         <!-- SKILLS -->
         <section id="skills">
-            <h1 class="center-align text-shadow section-heading-h1">
-                <span class="section-heading upper font-montserrat text-shadow">Skills</span>
+            <h1 class="center-align text-shadow section-heading">
+                <span class="heading-span upper font-montserrat text-shadow">Skills</span>
             </h1>
         </section>
 
         <!-- CONTACT -->
         <section id="contact">
-            <h1 class="center-align text-shadow section-heading-h1">
-                <span class="section-heading upper font-montserrat text-shadow">Contact</span>
+            <h1 class="center-align text-shadow section-heading">
+                <span class="heading-span upper font-montserrat text-shadow">Contact</span>
             </h1>
         </section>
 

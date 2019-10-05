@@ -85,7 +85,7 @@ h6 {
     font-family: var(--fontMontserrat);
 }
 
-.font-permanentmarker {
+.font-permanent-marker {
     font-family: var(--fontPermanentMarker);
 }
 
@@ -335,13 +335,13 @@ nav .brand-logo span {
     font-family: var(--fontMontserrat);
 }
 
-nav .brand-logo span.logo-span-hidden {
+nav .brand-logo span.hide-span {
     overflow: hidden;
     letter-spacing: -1em;
     transition: var(--transAll);
 }
 
-nav:hover .brand-logo span.logo-span-hidden {
+nav:hover .brand-logo span.hide-span {
     letter-spacing: unset;
 }
 
@@ -358,7 +358,7 @@ section {
     /* overflow-x: hidden; */
 }
 
-.section-heading {
+.heading-span {
     background-color: rgba(var(--lightBlueDark4), 1);
     color: rgba(var(--white), 1);
     padding: 5px 10px;
@@ -367,7 +367,7 @@ section {
     box-shadow: 0 0 0 3px rgba(var(--lightBlueDark4), 1);
 }
 
-.section-heading-h1 {
+.section-heading {
     margin: 2em auto;
 }
 
@@ -467,6 +467,7 @@ section {
 }
 
 .polaroid {
+    position: relative;
     float: left;
     text-align: center;
     font-size: 2em;
@@ -479,19 +480,128 @@ section {
     box-shadow: 0 8px 20px rgba(var(--black), 1);
 }
 
-.polaroid .font-permanentmarker {
+.polaroid img {
+    border-radius: 4px;
+    width: fit-content;
+}
+
+.polaroid .font-permanent-marker {
     letter-spacing: 5px;
 }
 
 .polaroid:hover {
+    transition-delay: 0.4s;
     filter: grayscale(0%);
-    transform: scale(0.95) rotate(0);
+    transform: scale(0.9) rotate(0);
 }
 
-/*----- projects -----*/
-/* #projects {
-    min-height: 150vh;
-} */
+.polaroid:hover .tape-top-left,
+.polaroid:hover .tape-top-right {
+    opacity: 0;
+}
+
+.polaroid:hover .tape-top-left {
+    left: -1000px;
+    transform: rotate(-360deg);
+}
+
+.polaroid:hover .tape-top-right {
+    right: -1000px;
+    transform: rotate(360deg);
+    transition-delay: 0.2s;
+}
+
+.tape-top-left,
+.tape-top-right {
+    position: absolute;
+    top: 0;
+    height: 40px;
+    width: 35%;
+    transition: var(--transAll);
+    background-color: rgba(var(--white), 0.5);
+    border-left: 1px dashed rgba(var(--black), 0.5);
+    border-right: 1px dashed rgba(var(--black), 0.5);
+}
+
+.polaroid .tape-top-left {
+    left: -10%;
+    transform: rotate(-35deg) skew(0, 0) translate(0%, 10px);
+}
+
+.polaroid .tape-top-right {
+    right: -10%;
+    transform: rotate(35deg) skew(0, 0) translate(0%, 10px);
+}
+
+/*----- portfolio -----*/
+.portfolio-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+    grid-gap: 1em;
+    align-self: center;
+    justify-items: center;
+    color: rgba(var(--greyLight4), 1);
+}
+
+.portfolio-list li {
+    align-self: center;
+    justify-items: center;
+}
+
+.portfolio-list li figure {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    perspective: 50em;
+    transition: var(--transAll);
+}
+
+.portfolio-list li figure img {
+    width: 100%;
+    border-radius: 8px;
+    transition: var(--transAll);
+}
+
+.portfolio-list li figure figcaption {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    transition: var(--transAll);
+    top: 50%;
+    opacity: 0;
+}
+
+.portfolio-list li figure h2,
+.portfolio-list li figure h4 {
+    margin: 0;
+}
+
+.portfolio-list li figure::after {
+    position: absolute;
+    content: "";
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    bottom: 17px;
+    opacity: 0;
+    background-color: rgba(var(--blueDark4), 1);
+    transform: rotateX(-90deg);
+    transform-origin: 50% 50%;
+    transition: var(--transAll);
+}
+
+.portfolio-list li figure:hover figcaption {
+    transform: translateY(-50%);
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+
+.portfolio-list li figure:hover::after,
+.portfolio-list li figure.hover::after {
+    transform: rotateX(0);
+    opacity: 0.8;
+}
 
 /*----- skills -----*/
 /* #skills {

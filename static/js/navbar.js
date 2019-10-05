@@ -34,7 +34,7 @@ $(document).ready(function () {
         }
         var top = $("#top").offset().top - 200;
         var about = $("#about").offset().top - 200;
-        var projects = $("#projects").offset().top - 200;
+        var portfolio = $("#portfolio").offset().top - 200;
         var skills = $("#skills").offset().top - 200;
         var contact = $("#contact").offset().top - 200;
         if ($(window).scrollTop() >= top && $(window).scrollTop() <= about) {
@@ -42,15 +42,15 @@ $(document).ready(function () {
         } else {
             $("#navlink-top").removeClass("active-section");
         }
-        if ($(window).scrollTop() >= about && $(window).scrollTop() <= projects) {
+        if ($(window).scrollTop() >= about && $(window).scrollTop() <= portfolio) {
             $("#navlink-about").addClass("active-section");
         } else {
             $("#navlink-about").removeClass("active-section");
         }
-        if ($(window).scrollTop() >= projects && $(window).scrollTop() <= skills) {
-            $("#navlink-projects").addClass("active-section");
+        if ($(window).scrollTop() >= portfolio && $(window).scrollTop() <= skills) {
+            $("#navlink-portfolio").addClass("active-section");
         } else {
-            $("#navlink-projects").removeClass("active-section");
+            $("#navlink-portfolio").removeClass("active-section");
         }
         if ($(window).scrollTop() >= skills && $(window).scrollTop() <= contact) {
             $("#navlink-skills").addClass("active-section");
