@@ -75,7 +75,7 @@ $(document).ready(function () {
         li_project += "</figcaption></figure><ul class='chip-container center-align'>";
         // create 'chip' <div> for each tool used
         for(var i in project.chips) {
-            li_project += "<li class='chip'><img src='" + imgs_skills + project.chips[i] + imgType + "' alt='" + project.chips[i] + "'>" + project.chips[i] +"</li>";
+            li_project += "<li class='chip'><img src='" + imgs_skills + project.chips[i].toLowerCase() + imgType + "' alt='" + project.chips[i] + "'>" + project.chips[i] +"</li>";
         }
         li_project += "</ul></li>";
     });
