@@ -108,12 +108,13 @@ h6 {
 
 /*----- top button -----*/
 #btn-top {
+    line-height: 1em;
     font-size: 1.75em;
     cursor: pointer;
     position: fixed;
     bottom: 2em;
     right: -3em;
-    opacity: 0.6;
+    opacity: 0.75;
     z-index: 102;
     text-shadow: var(--textShadow);
     transform: rotate(180deg);
@@ -358,17 +359,19 @@ section {
     /* overflow-x: hidden; */
 }
 
+.section-heading {
+    margin: 2em auto;
+}
+
 .heading-span {
     background-color: rgba(var(--lightBlueDark4), 1);
     color: rgba(var(--white), 1);
     padding: 5px 10px;
+    font-size: 1.25em;
     text-align: center;
+    letter-spacing: 2px;
     border: 3px solid rgba(var(--white), 1);
     box-shadow: 0 0 0 3px rgba(var(--lightBlueDark4), 1);
-}
-
-.section-heading {
-    margin: 2em auto;
 }
 
 .parallax-container {
@@ -442,7 +445,7 @@ section {
     line-height: 20vw;
     text-shadow: var(--textShadow);
     transition: var(--transAll);
-    background-color: rgba(var(--blueDark4), 0.8);
+    background-color: rgba(var(--blueDark4), 0.9);
 }
 
 .hexagons-6x li:last-child {
@@ -543,38 +546,38 @@ section {
     color: rgba(var(--greyLight4), 1);
 }
 
-.portfolio-list li {
-    align-self: center;
-    justify-items: center;
-}
-
 .portfolio-list li figure {
     position: relative;
     overflow: hidden;
     margin: 0 auto;
+    width: fit-content;
     perspective: 50em;
+    border-radius: 8px;
+    background-color: rgba(var(--white), 1);
     transition: var(--transAll);
 }
 
 .portfolio-list li figure img {
     width: 100%;
     border-radius: 8px;
+    vertical-align: middle;
     transition: var(--transAll);
 }
 
 .portfolio-list li figure figcaption {
     position: absolute;
     width: 100%;
+    padding: 3%;
     text-align: center;
     z-index: 2;
-    transition: var(--transAll);
     top: 50%;
     opacity: 0;
+    transition: var(--transAll);
 }
 
-.portfolio-list li figure h2,
-.portfolio-list li figure h4 {
-    margin: 0;
+.portfolio-list li figure figcaption a.btn {
+    color: rgba(var(--greyLight4), 1);
+    background-color: rgba(var(--greyDark4), 1);
 }
 
 .portfolio-list li figure::after {
@@ -583,24 +586,46 @@ section {
     top: 12px;
     left: 12px;
     right: 12px;
-    bottom: 17px;
+    bottom: 12px;
     opacity: 0;
     background-color: rgba(var(--blueDark4), 1);
     transform: rotateX(-90deg);
     transform-origin: 50% 50%;
     transition: var(--transAll);
+    transition-delay: 0.2s;
+}
+
+.portfolio-list li figure:hover img {
+    transform: scale(1.25);
+    opacity: 0.5;
 }
 
 .portfolio-list li figure:hover figcaption {
-    transform: translateY(-50%);
     opacity: 1;
-    transition-delay: 0.2s;
+    transition-delay: 0.5s;
+    transform: translateY(-50%);
 }
 
 .portfolio-list li figure:hover::after,
 .portfolio-list li figure.hover::after {
     transform: rotateX(0);
-    opacity: 0.8;
+    opacity: 0.9;
+}
+
+.chip-container {
+    margin: 5px auto 3em auto;
+    width: 350px;
+}
+
+.chip-container li.chip {
+    width: fit-content;
+    font-weight: bold;
+    color: rgba(var(--greyLight4), 1);
+    background-color: rgba(var(--blueDark4), 1);
+}
+
+.chip-container li.chip img {
+    background-color: rgba(var(--greyLight4), 1);
 }
 
 /*----- skills -----*/

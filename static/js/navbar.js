@@ -17,6 +17,12 @@ $(document).ready(function () {
             scrollTop: $("#top").offset().top
         }, 100);
     });
+    $("#btn-top").mouseenter(function () {
+        $(this).addClass("pulse");
+    });
+    $("#btn-top").mouseleave(function () {
+        $(this).removeClass("pulse");
+    });
 
     // update navlinks if section in-view
     $(window).on("scroll resize load", function () {
