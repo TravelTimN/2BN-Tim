@@ -553,7 +553,7 @@ section {
     width: fit-content;
     perspective: 50em;
     border-radius: 8px;
-    background-color: rgba(var(--white), 1);
+    background-color: rgba(var(--white), 0);
     transition: var(--transAll);
 }
 
@@ -576,6 +576,7 @@ section {
 }
 
 .portfolio-list li figure figcaption a.btn {
+    margin: 2px;
     color: rgba(var(--greyLight4), 1);
     background-color: rgba(var(--greyDark4), 1);
 }
@@ -598,6 +599,10 @@ section {
 .portfolio-list li figure:hover img {
     transform: scale(1.25);
     opacity: 0.5;
+}
+
+.portfolio-list li figure:hover {
+    background-color: rgba(var(--white), 1);
 }
 
 .portfolio-list li figure:hover figcaption {
