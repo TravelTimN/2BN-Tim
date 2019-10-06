@@ -60,8 +60,8 @@ $(document).ready(function () {
 
     // set variables
     let imgType = ".png";
-    let imgs_skills = "/static/img/skills/";
-    let imgs_portfolio = "/static/img/portfolio/";
+    let imgs_skills = "static/img/skills/";
+    let imgs_portfolio = "static/img/portfolio/";
     let div_portfolio = $("#portfolio");
     let ul_portfolio = "<ul class='portfolio-list text-shadow'>";
     let li_project = "";
