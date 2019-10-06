@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     // skill details
-    let imgFolder = "../static/img/skills/";
+    let imgFolder = "/static/img/skills/";
     let imgType = ".png";
     let skills = ["HTML", "CSS", "JavaScript", "Python", "Git", "GitHub", "Django", "Flask", "Materialize", "Bootstrap", "Sass", "jQuery", "LeafletJS", "Stripe", "D3js", "DCjs", "Jasmine", "VSCode", "Heroku", "WordPress", "TravisCI", "Slack", "AWS", "MySQL", "PostgreSQL", "MongoDB", "Balsamiq", "Photoshop"];
     let skillsDiv = $("#skills");
