@@ -38,11 +38,11 @@ $(document).ready(function () {
                 "transform": "rotate(180deg)"
             });
         }
-        var top = $("#top").offset().top - 200;
-        var about = $("#about").offset().top - 200;
-        var portfolio = $("#portfolio").offset().top - 200;
-        var skills = $("#skills").offset().top - 200;
-        var contact = $("#contact").offset().top - 200;
+        var top = $("#top").offset().top - 150;
+        var about = $("#about").offset().top - 150;
+        var portfolio = $("#portfolio").offset().top - 150;
+        var skills = $("#skills").offset().top - 150;
+        var contact = $("#contact").offset().top - 150;
         if ($(window).scrollTop() >= top && $(window).scrollTop() <= about) {
             $("#navlink-top").addClass("active-section");
         } else {

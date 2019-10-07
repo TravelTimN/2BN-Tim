@@ -1,7 +1,11 @@
-/*----- @imports -----*/
+/*-----------------------------------------*/
+/*---------------- @IMPORTS ---------------*/
+/*-----------------------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Bowlby+One|Permanent+Marker|Montserrat:400,600,700|Open+Sans:400,600,700&display=swap");
 
-/*----- split image -----*/
+/*-----------------------------------------*/
+/*------------ :ROOT VARIABLES ------------*/
+/*-----------------------------------------*/
 :root {
     --blueDark1: 30, 136, 229;
     --blueDark2: 25, 118, 210;
@@ -22,6 +26,9 @@
     --transAll: all 0.3s ease-in-out;
 }
 
+/*-----------------------------------------*/
+/*----------------- GLOBAL ----------------*/
+/*-----------------------------------------*/
 * {
     margin: 0;
     padding: 0;
@@ -106,7 +113,9 @@ h6 {
     text-transform: uppercase;
 }
 
-/*----- top button -----*/
+/*-----------------------------------------*/
+/*-------------- TOP BUTTON ---------------*/
+/*-----------------------------------------*/
 #btn-top {
     line-height: 1em;
     font-size: 1.75em;
@@ -125,7 +134,9 @@ h6 {
     opacity: 1;
 }
 
-/*----- split image -----*/
+/*-----------------------------------------*/
+/*-------------- SPLIT IMAGE --------------*/
+/*-----------------------------------------*/
 header {
     position: relative;
     width: 100%;
@@ -245,7 +256,9 @@ header {
     animation-delay: 3.35s;
 }
 
-/*----- navbar -----*/
+/*-----------------------------------------*/
+/*---------------- NAVBAR -----------------*/
+/*-----------------------------------------*/
 nav {
     top: 0;
     position: sticky;
@@ -350,12 +363,14 @@ nav:hover .brand-logo span:nth-child(4) {
     transition-delay: 0.2s;
 }
 
-/*----- sections -----*/
+/*-----------------------------------------*/
+/*--------------- SECTIONS ----------------*/
+/*-----------------------------------------*/
 section {
     padding: 1em;
     width: 100%;
-    margin-top: 3vh;
-    margin-bottom: 5vw;
+    /* margin-top: 3vh; */
+    /* margin-bottom: 5vw; */
     /* overflow-x: hidden; */
 }
 
@@ -392,83 +407,9 @@ section {
     box-shadow: 0 0 15px 5px rgba(var(--black), 1);
 }
 
-/*----- skills -----*/
-.hexagons-6x,
-.hexagons-5x {
-    overflow: hidden;
-    width: 95%;
-    margin: -3% 7.5%;
-}
-
-.hexagons-6x li,
-.hexagons-5x li {
-    position: relative;
-    list-style-type: none;
-    margin: 0 0.5%;
-    width: 13.92%; /* (100-2.5) / 3.5 / 2 */
-    padding-bottom: 16.07%; /* ^width / 0.866 / 2 */
-    float: left;
-    overflow: hidden;
-    transform: rotate(-60deg) skewY(30deg);
-}
-
-.hexagons-6x li *,
-.hexagons-5x li * {
-    position: absolute;
-}
-
-.hexagons-6x li div,
-.hexagons-5x li div {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    overflow: hidden;
-    color: rgba(var(--greyLight4), 1);
-    transform: skewY(-30deg) rotate(60deg);
-}
-
-.hexagons-6x li img,
-.hexagons-5x li img {
-    left: -100%;
-    right: -100%;
-    height: 100%;
-    margin: 0 auto;
-    background-color: rgba(var(--greyLight4), 1);
-}
-
-.hexagons-6x li div h1,
-.hexagons-5x li div h1 {
-    opacity: 0;
-    top: -25vw;
-    width: 100%;
-    font-size: 2vw;
-    line-height: 20vw;
-    text-shadow: var(--textShadow);
-    transition: var(--transAll);
-    background-color: rgba(var(--blueDark4), 0.9);
-}
-
-.hexagons-6x li:last-child {
-    margin-right: 5%;
-}
-
-.hexagons-5x {
-    margin-left: 14.5%;
-    margin-top: -3%;
-}
-
-.hexagons-6x li div:hover h1,
-.hexagons-5x li div:hover h1 {
-    top: -5vw;
-    opacity: 1;
-}
-
-/*----- about -----*/
-#about {
-    width: 90%;
-    margin: 0 auto;
-}
-
+/*-----------------------------------------*/
+/*----------------- ABOUT -----------------*/
+/*-----------------------------------------*/
 .polaroid {
     position: relative;
     float: left;
@@ -536,7 +477,9 @@ section {
     transform: rotate(35deg) skew(0, 0) translate(0%, 10px);
 }
 
-/*----- portfolio -----*/
+/*-----------------------------------------*/
+/*-------------- PORTFOLIO ----------------*/
+/*-----------------------------------------*/
 .portfolio-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
@@ -554,6 +497,7 @@ section {
     perspective: 50em;
     border-radius: 8px;
     background-color: rgba(var(--white), 0);
+    box-shadow: 0 0 1em 0 rgba(var(--black), 1);
     transition: var(--transAll);
 }
 
@@ -603,6 +547,7 @@ section {
 
 .portfolio-list li figure:hover {
     background-color: rgba(var(--white), 1);
+    box-shadow: 0 0 0.75em 0 rgba(var(--white), 1);
 }
 
 .portfolio-list li figure:hover figcaption {
@@ -618,7 +563,7 @@ section {
 }
 
 .chip-container {
-    margin: 5px auto 3em auto;
+    margin: 1em auto 3em auto;
     width: 350px;
 }
 
@@ -633,22 +578,115 @@ section {
     background-color: rgba(var(--greyLight4), 1);
 }
 
-/*----- skills -----*/
-/* #skills {
-    min-height: 150vh;
-} */
+/*-----------------------------------------*/
+/*---------------- SKILLS -----------------*/
+/*-----------------------------------------*/
+#skills {
+    /* margin-bottom: 5em; */
+    overflow: hidden;
+}
 
-/*----- contact -----*/
+#skills h2 {
+    margin-bottom: 4em;
+}
+.hexagons-6x:last-child {
+    margin-bottom: 2em;
+}
+
+.hexagons-6x,
+.hexagons-5x {
+    overflow: hidden;
+    width: 95%;
+    margin: -3% 7.5%;
+}
+
+.hexagons-6x li,
+.hexagons-5x li {
+    position: relative;
+    list-style-type: none;
+    margin: 0 0.5%;
+    width: 13.92%; /* (100-2.5) / 3.5 / 2 */
+    padding-bottom: 16.07%; /* ^width / 0.866 / 2 */
+    float: left;
+    overflow: hidden;
+    transform: rotate(-60deg) skewY(30deg);
+    transition: var(--transAll);
+}
+
+.hexagons-6x li *,
+.hexagons-5x li * {
+    position: absolute;
+}
+
+.hexagons-6x li div,
+.hexagons-5x li div {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    color: rgba(var(--greyLight4), 1);
+    transform: skewY(-30deg) rotate(60deg);
+}
+
+.hexagons-6x li img,
+.hexagons-5x li img {
+    left: -100%;
+    right: -100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: rgba(var(--greyLight4), 1);
+}
+
+.hexagons-6x li div h1,
+.hexagons-5x li div h1 {
+    opacity: 0;
+    top: -25vw;
+    width: 100%;
+    font-size: 2vw;
+    line-height: 20vw;
+    text-shadow: var(--textShadow);
+    transition: var(--transAll);
+    transition-delay: 0.25s;
+    background-color: rgba(var(--blueDark4), 0.9);
+}
+
+.hexagons-6x li:last-child {
+    margin-right: 5%;
+}
+
+.hexagons-5x {
+    margin-left: 14.5%;
+    margin-top: -3%;
+}
+
+.hexagons-6x li div:hover h1,
+.hexagons-5x li div:hover h1 {
+    top: -5vw;
+    opacity: 1;
+}
+
+.hexagons-6x li:hover,
+.hexagons-5x li:hover {
+    transform: rotate(660deg) skewY(30deg);
+}
+
+/*-----------------------------------------*/
+/*---------------- CONTACT ----------------*/
+/*-----------------------------------------*/
 #contact {
     min-height: 50vh;
 }
 
-/*----- footer -----*/
+/*-----------------------------------------*/
+/*---------------- FOOTER -----------------*/
+/*-----------------------------------------*/
 footer {
     min-height: 25vh;
 }
 
-/*----- MEDIA QUERIES -----*/
+/*-----------------------------------------*/
+/*------------ @MEDIA QUERIES -------------*/
+/*-----------------------------------------*/
 
 /* >600px Materialize Tablet size (.m) */
 @media (min-width: 600px) {}
