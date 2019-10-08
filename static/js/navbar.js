@@ -26,6 +26,21 @@ $(document).ready(function () {
 
     // update navlinks if section in-view
     $(window).on("scroll resize load", function () {
+
+        // expand navbar once at top
+        var nav = $("nav").offset().top - 10;
+        if ($(window).scrollTop() >= nav) {
+            $("nav").css({
+                "border-top": "10px solid black",
+                "height": "80px"
+            });
+        } else {
+            $("nav").css({
+                "border-top": "0 solid transparent",
+                "height": "64px"
+            });
+        }
+
         // scroll to top button
         if ($(window).scrollTop() > 300) {
             $("#btn-top").css({

@@ -43,6 +43,47 @@ body {
     flex-direction: column;
     overflow-x: hidden;
     background-color: rgba(var(--greyDark4), 1);
+
+    margin: 10px;
+}
+
+html::before,
+html::after,
+body::before,
+body::after {
+    content: "";
+    background-color: rgba(var(--blueDark1), 0.5);
+    position: fixed;
+    display: block;
+    z-index: 999;
+}
+
+html::before {
+    height: 10px;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+html::after {
+    width: 10px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+body::before {
+    height: 10px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+body::after {
+    width: 10px;
+    top: 0;
+    bottom: 0;
+    left: 0;
 }
 
 *::selection {
@@ -260,6 +301,7 @@ header {
 /*---------------- NAVBAR -----------------*/
 /*-----------------------------------------*/
 nav {
+    /* top: 10px; */
     top: 0;
     position: sticky;
     font-weight: bold;
