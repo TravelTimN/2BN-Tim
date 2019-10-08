@@ -24,7 +24,7 @@ $(document).ready(function () {
         $(this).removeClass("pulse");
     });
 
-    // update navlinks if section in-view
+    // update elements when section in viewport
     $(window).on("scroll resize load", function () {
 
         // expand navbar once at top
@@ -53,11 +53,28 @@ $(document).ready(function () {
                 "transform": "rotate(180deg)"
             });
         }
+
         var top = $("#top").offset().top - 150;
         var about = $("#about").offset().top - 150;
         var portfolio = $("#portfolio").offset().top - 150;
         var skills = $("#skills").offset().top - 150;
         var contact = $("#contact").offset().top - 150;
+        var headingSpanIf = {
+            "background-color": "rgba(var(--black), 1)",
+            "color": "rgba(var(--lightBlueDark4), 1)",
+            "border": "3px solid rgba(var(--lightBlueDark4), 1)",
+            "box-shadow": "0 0 0 3px rgba(var(--black), 1)",
+            "letter-spacing": "5px",
+            "font-size": "1.5em"
+        };
+        var headingSpanElse = {
+            "background-color": "rgba(var(--lightBlueDark4), 1)",
+            "color": "rgba(var(--white), 1)",
+            "border": "3px solid rgba(var(--white), 1)",
+            "box-shadow": "0 0 0 3px rgba(var(--lightBlueDark4), 1)",
+            "letter-spacing": "2px",
+            "font-size": "1.25em"
+        };
         if ($(window).scrollTop() >= top && $(window).scrollTop() <= about) {
             $("#navlink-top").addClass("active-section");
         } else {
@@ -65,23 +82,31 @@ $(document).ready(function () {
         }
         if ($(window).scrollTop() >= about && $(window).scrollTop() <= portfolio) {
             $("#navlink-about").addClass("active-section");
+            $("#about span.heading-span").css(headingSpanIf);
         } else {
             $("#navlink-about").removeClass("active-section");
+            $("#about span.heading-span").css(headingSpanElse);
         }
         if ($(window).scrollTop() >= portfolio && $(window).scrollTop() <= skills) {
             $("#navlink-portfolio").addClass("active-section");
+            $("#portfolio span.heading-span").css(headingSpanIf);
         } else {
             $("#navlink-portfolio").removeClass("active-section");
+            $("#portfolio span.heading-span").css(headingSpanElse);
         }
         if ($(window).scrollTop() >= skills && $(window).scrollTop() <= contact) {
             $("#navlink-skills").addClass("active-section");
+            $("#skills span.heading-span").css(headingSpanIf);
         } else {
             $("#navlink-skills").removeClass("active-section");
+            $("#skills span.heading-span").css(headingSpanElse);
         }
         if ($(window).scrollTop() >= contact) {
             $("#navlink-contact").addClass("active-section");
+            $("#contact span.heading-span").css(headingSpanIf);
         } else {
             $("#navlink-contact").removeClass("active-section");
+            $("#contact span.heading-span").css(headingSpanElse);
         }
     });
 
