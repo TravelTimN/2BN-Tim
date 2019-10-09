@@ -43,7 +43,6 @@ body {
     flex-direction: column;
     overflow-x: hidden;
     background-color: rgba(var(--greyDark4), 1);
-
     margin: 10px;
 }
 
@@ -311,6 +310,10 @@ nav {
     box-shadow: 0 4px 16px 0 rgba(var(--blueDark4), 0.5);
 }
 
+nav .nav-wrapper {
+    line-height: 64px;
+}
+
 nav:hover {
     background-color: rgba(var(--black), 1);
 }
@@ -412,9 +415,7 @@ nav:hover .brand-logo span:nth-child(4) {
 section {
     padding: 1em;
     width: 100%;
-    /* margin-top: 3vh; */
-    /* margin-bottom: 5vw; */
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 .section-heading {
@@ -489,12 +490,12 @@ section {
 }
 
 .polaroid:hover .tape-top-left {
-    left: -1000px;
+    left: -500px;
     transform: rotate(-360deg);
 }
 
 .polaroid:hover .tape-top-right {
-    right: -1000px;
+    right: -500px;
     transform: rotate(360deg);
     transition-delay: 0.2s;
 }
@@ -519,6 +520,10 @@ section {
 .polaroid .tape-top-right {
     right: -10%;
     transform: rotate(35deg) skew(0, 0) translate(0%, 10px);
+}
+
+#about p {
+    margin: 1em auto;
 }
 
 /*-----------------------------------------*/

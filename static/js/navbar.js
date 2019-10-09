@@ -54,11 +54,11 @@ $(document).ready(function () {
             });
         }
 
-        var top = $("#top").offset().top - 150;
-        var about = $("#about").offset().top - 150;
-        var portfolio = $("#portfolio").offset().top - 150;
-        var skills = $("#skills").offset().top - 150;
-        var contact = $("#contact").offset().top - 150;
+        var top = $("#top").offset().top - 200;
+        var about = $("#about").offset().top - 200;
+        var portfolio = $("#portfolio").offset().top - 200;
+        var skills = $("#skills").offset().top - 200;
+        var contact = $("#contact").offset().top - 200;
         var headingSpanIf = {
             "background-color": "rgba(var(--black), 1)",
             "color": "rgba(var(--lightBlueDark4), 1)",
