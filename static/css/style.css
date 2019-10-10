@@ -11,9 +11,11 @@
     --blueDark2: 25, 118, 210;
     --blueDark3: 21, 101, 192;
     --blueDark4: 13, 71, 161;
+    --blueGreyDark4: 55, 71, 79;
     --lightBlue: 3, 169, 244;
     --lightBlueDark4: 1, 87, 155;
     --greyLight4: 245, 245, 245;
+    /* --greyDark2: 97, 97, 97; */
     --greyDark3: 66, 66, 66;
     --greyDark4: 33, 33, 33;
     --black: 0, 0, 0;
@@ -151,6 +153,10 @@ h6 {
 
 .upper {
     text-transform: uppercase;
+}
+
+cite {
+    cursor: pointer;
 }
 
 /*-----------------------------------------*/
@@ -522,8 +528,123 @@ section {
     transform: rotate(35deg) skew(0, 0) translate(0%, 10px);
 }
 
+#about {
+    letter-spacing: 1px;
+}
+
 #about p {
     margin: 1em auto;
+    line-height: 1.75em;
+    text-shadow: var(--textShadow);
+}
+
+#about p:nth-child(1) {
+    display: inline-block;
+    border: 1px solid rgba(var(--greyLight4), 1);
+    background-color: rgba(var(--black), 1);
+    font-family: Courier, monospace;
+    border-radius: 5px;
+    padding: 0;
+}
+
+kbd {
+    cursor: text;
+    color: rgba(var(--lightBlue), 1);
+    display: inline-block;
+    overflow: hidden;
+    padding: 2px 8px;
+    margin-right: 8px;
+    font-size: 1.25em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-right: 4px solid rgba(var(--lightBlue), 1);
+    animation: typing 5s steps(30, end), blink .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0%;}
+    to {width: 100%; max-width: fit-content;}
+}
+
+@keyframes blink {
+    from, to {border-right-color: transparent;}
+    50% {border-right-color: rgba(var(--lightBlue), 1);}
+}
+
+#about ul {
+    columns: 1;
+}
+
+#about ul li {
+    list-style-type: disc;
+    margin-left: 0.5em;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(var(--lightBlue), 0.25);
+}
+
+#about ul li img {
+    max-height: 12px;
+}
+
+.html-color,
+.css-color,
+.js-color,
+.py-color,
+.ps-color,
+.ai-color,
+.ae-color,
+.sql-color {
+    font-weight: bolder;
+}
+
+.html-color {
+    color: #f16529;
+}
+
+.css-color {
+    color: #2965f1;
+}
+
+.js-color {
+    color: #ffda3e;
+}
+
+.sql-color {
+    color: rgba(var(--white), 1);
+}
+
+.py-color {
+    background: linear-gradient(to right, #366E9C 0%, #366E9C 45%, #FFD03E 50%, #FFD03E 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.ps-color,
+.ai-color,
+.ae-color {
+    padding: 1px 4px;
+    white-space: nowrap;
+}
+
+.ps-color {
+    color: #00C3F8;
+    border: 1px solid #00C3F8;
+    background-color: #001C25;
+}
+
+.ai-color {
+    color: #F87900;
+    border: 1px solid #F87900;
+    background-color: #251200;
+}
+
+.ae-color {
+    color: #CC8DF8;
+    border: 1px solid #CC8DF8;
+    background-color: #1E003E;
 }
 
 /*-----------------------------------------*/
@@ -737,7 +858,11 @@ footer {
 /*-----------------------------------------*/
 
 /* >600px Materialize Tablet size (.m) */
-@media (min-width: 600px) {}
+@media (min-width: 600px) {
+    #about ul {
+        columns: 2;
+    }
+}
 
 /* >992px Materialize Desktop size (.l) */
 @media (min-width: 992px) {}
