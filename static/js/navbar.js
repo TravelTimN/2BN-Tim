@@ -17,12 +17,6 @@ $(document).ready(function () {
             scrollTop: $("#top").offset().top
         }, 100);
     });
-    $("#btn-top").mouseenter(function () {
-        $(this).addClass("pulse");
-    });
-    $("#btn-top").mouseleave(function () {
-        $(this).removeClass("pulse");
-    });
 
     // update elements when section in viewport
     $(window).on("scroll resize load", function () {
@@ -44,13 +38,11 @@ $(document).ready(function () {
         // scroll to top button
         if ($(window).scrollTop() > 300) {
             $("#btn-top").css({
-                "right": "2em",
-                "transform": "rotate(0)"
+                "bottom": "0"
             });
         } else {
             $("#btn-top").css({
-                "right": "-3em",
-                "transform": "rotate(180deg)"
+                "bottom": "-100px"
             });
         }
 

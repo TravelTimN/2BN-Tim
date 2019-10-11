@@ -163,21 +163,29 @@ cite {
 /*-------------- TOP BUTTON ---------------*/
 /*-----------------------------------------*/
 #btn-top {
-    line-height: 1em;
     font-size: 1.75em;
     cursor: pointer;
     position: fixed;
-    bottom: 2em;
-    right: -3em;
+    border: 0;
+    border-top-left-radius: 8px;
+    padding: 0.5em;
+    bottom: -100px;
+    right: 0;
+    height: 2em;
     opacity: 0.75;
     z-index: 102;
     text-shadow: var(--textShadow);
-    transform: rotate(180deg);
     transition: var(--transAll);
+}
+
+#btn-top i {
+    vertical-align: text-top;
+    padding-bottom: 1em;
 }
 
 #btn-top:hover {
     opacity: 1;
+    height: 5em;
 }
 
 /*-----------------------------------------*/
@@ -842,8 +850,25 @@ kbd {
 /*-----------------------------------------*/
 /*---------------- CONTACT ----------------*/
 /*-----------------------------------------*/
-#contact {
-    min-height: 50vh;
+#contact ul {
+    width: 100%;
+    align-self: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+    font-size: 1em;
+    white-space: nowrap;
+}
+
+#contact ul li {
+    margin: 0.5em;
+    font-family: var(--fontPermanentMarker);
+}
+
+#contact ul li i {
+    font-size: 2em;
+    text-shadow: 0 1px 2px rgba(var(--greyLight4), 1);
+    color: rgba(var(--greyDark4), 1);
 }
 
 /*-----------------------------------------*/
@@ -862,7 +887,15 @@ footer {
     #about ul {
         columns: 2;
     }
+
+    #contact ul {
+        font-size: 1.5em;
+    }
 }
 
 /* >992px Materialize Desktop size (.l) */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    #contact ul {
+        font-size: 2em;
+    }
+}
