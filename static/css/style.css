@@ -15,7 +15,6 @@
     --lightBlue: 3, 169, 244;
     --lightBlueDark4: 1, 87, 155;
     --greyLight4: 245, 245, 245;
-    /* --greyDark2: 97, 97, 97; */
     --greyDark3: 66, 66, 66;
     --greyDark4: 33, 33, 33;
     --black: 0, 0, 0;
@@ -96,6 +95,15 @@ body::after {
     outline: none;
 }
 
+a {
+    color: rgba(var(--lightBlue), 1);
+    transition: var(--transAll);
+}
+
+a:hover {
+    color: rgba(var(--lightBlueDark4), 1);
+}
+
 h1, h2, h3, h4, h5, h6 {
     margin: 1rem 0;
     vertical-align: middle;
@@ -155,10 +163,6 @@ h6 {
     text-transform: uppercase;
 }
 
-cite {
-    cursor: pointer;
-}
-
 /*-----------------------------------------*/
 /*-------------- TOP BUTTON ---------------*/
 /*-----------------------------------------*/
@@ -168,9 +172,10 @@ cite {
     position: fixed;
     border: 0;
     border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     padding: 0.5em;
     bottom: -100px;
-    right: 0;
+    right: 20px;
     height: 2em;
     opacity: 0.75;
     z-index: 102;
@@ -243,7 +248,6 @@ header {
 
 .developer {
     z-index: 2;
-    /* width: 50vw; */
     transform: skew(-30deg);
     margin-left: -1000px;
     width: calc(50vw + 1000px);
@@ -536,13 +540,11 @@ section {
     transform: rotate(35deg) skew(0, 0) translate(0%, 10px);
 }
 
-#about {
-    letter-spacing: 1px;
-}
-
-#about p {
+#about p,
+#portfolio p {
     margin: 1em auto;
     line-height: 1.75em;
+    letter-spacing: 1px;
     text-shadow: var(--textShadow);
 }
 
@@ -766,6 +768,7 @@ kbd {
 #skills h2 {
     margin-bottom: 4em;
 }
+
 .hexagons-6x:last-child {
     margin-bottom: 2em;
 }
@@ -848,34 +851,105 @@ kbd {
 }
 
 /*-----------------------------------------*/
-/*---------------- CONTACT ----------------*/
+/*------------- FADE EFFECTS --------------*/
 /*-----------------------------------------*/
-#contact ul {
-    width: 100%;
-    align-self: center;
-    justify-items: center;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
-    font-size: 1em;
-    white-space: nowrap;
+.fadeIn,
+.fadeUp,
+.fadeLeft,
+.fadeRight {
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    overflow-x: hidden;
 }
 
-#contact ul li {
-    margin: 0.5em;
-    font-family: var(--fontPermanentMarker);
+.fadeUp {
+    transform: translate3d(0, 100px, 0);
 }
 
-#contact ul li i {
-    font-size: 2em;
-    text-shadow: 0 1px 2px rgba(var(--greyLight4), 1);
-    color: rgba(var(--greyDark4), 1);
+.fadeLeft {
+    transform: translate3d(-100px, 0, 0);
+}
+
+.fadeRight {
+    transform: translate3d(100px, 0, 0);
+}
+
+.fadeIn.inView,
+.fadeUp.inView,
+.fadeLeft.inView,
+.fadeRight.inView {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
 }
 
 /*-----------------------------------------*/
 /*---------------- FOOTER -----------------*/
 /*-----------------------------------------*/
 footer {
-    min-height: 25vh;
+    padding: 2em 0;
+}
+
+footer ul {
+    margin-bottom: 1em;
+    align-self: center;
+    justify-items: center;
+    display: inline-block;
+    font-size: 3vw;
+    font-weight: lighter;
+    white-space: nowrap;
+    letter-spacing: 1px;
+}
+
+footer ul li {
+    margin: 1vw;
+    display: inline-block;
+    font-family: var(--fontPermanentMarker);
+}
+
+footer ul li i {
+    font-size: 2em;
+    margin: 5px;
+    text-shadow:
+        0 0 1px rgba(var(--white), 1),
+        2px 2px rgba(244, 67, 54, 0.9),
+        4px 4px rgba(255, 193, 7, 0.8),
+        6px 6px rgba(76, 175, 80, 0.7),
+        8px 8px rgba(33, 150, 243, 0.6),
+        10px 10px rgba(156, 39, 176, 0.5);
+    color: rgba(var(--blueGreyDark4), 1);
+}
+
+.footer-title {
+    font-weight: normal;
+    letter-spacing: 3px;
+    font-family: var(--fontBowlby);
+}
+
+footer h1 a {
+    font-weight: normal;
+}
+
+footer h1 a i {
+    margin: 10px;
+    padding: 5px 3px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    background-color: rgba(var(--white), 1);
+    transition: var(--transAll);
+}
+
+footer h1 a i.fa-linkedin-in {
+    color: rgba(var(--white), 1);
+    background-color: #0077B5;
+    text-shadow: var(--textShadow);
+}
+
+footer h1 a i.fa-github {
+    color: rgba(var(--black), 1);
+}
+
+footer h1 a i.fa-youtube {
+    color: #FF0000;
 }
 
 /*-----------------------------------------*/
@@ -888,14 +962,17 @@ footer {
         columns: 2;
     }
 
-    #contact ul {
-        font-size: 1.5em;
+    footer ul {
+        font-size: 2vw;
+        letter-spacing: 2px;
     }
 }
 
 /* >992px Materialize Desktop size (.l) */
 @media (min-width: 992px) {
-    #contact ul {
-        font-size: 2em;
+
+    footer ul {
+        font-size: 1.5vw;
+        letter-spacing: 3px;
     }
 }

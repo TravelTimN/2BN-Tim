@@ -75,14 +75,14 @@ $(document).ready(function () {
     // map each project to own <li> item
     portfolio.map(project => {
         li_project += "<li><div class='divider blue'></div><h2 class='center-align'>" + project.title + "</h2>";
-        li_project += "<figure><img src='" + imgs_portfolio + project.image + imgType + "' alt='" + project.title + "' lazyload='on'>";
+        li_project += "<figure class='fadeUp'><img src='" + imgs_portfolio + project.image + imgType + "' alt='" + project.title + "' lazyload='on'>";
         li_project += "<figcaption><h2>" + project.course + "</h2><h4>" + project.project + "</h4><h3>" + project.name + "</h3>";
         li_project += "<a href='" + project.repo + "' class='btn' target='_blank'><i class='fab fa-github right' aria-hidden='true'></i>REPO</a>";
         li_project += "<a href='" + project.link + "' class='btn' target='_blank'><i class='fas fa-link right' aria-hidden='true'></i>LIVE</a>";
         li_project += "</figcaption></figure><ul class='chip-container center-align'>";
         // create 'chip' <div> for each tool used
         for(var i in project.chips) {
-            li_project += "<li class='chip'><img src='" + imgs_skills + project.chips[i].toLowerCase() + imgType + "' alt='" + project.chips[i] + "'>" + project.chips[i] +"</li>";
+            li_project += "<li class='chip fadeIn'><img src='" + imgs_skills + project.chips[i].toLowerCase() + imgType + "' alt='" + project.chips[i] + "'>" + project.chips[i] +"</li>";
         }
         li_project += "</ul></li>";
     });

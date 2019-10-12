@@ -20,35 +20,35 @@ $(document).ready(function () {
     // row 1
     let row1 = ul6x;
     skillsRow1.map(skill => {
-        row1 += "<li><div><img src='" + imgFolder + skill.toLowerCase() + imgType + "' alt='" + skill + "' lazyload='on'><h1>" + skill + "</h1></div></li>";
+        row1 += "<li><div><img src='" + imgFolder + skill.toLowerCase() + imgType + "' alt='" + skill + "' class='fadeIn' lazyload='on'><h1>" + skill + "</h1></div></li>";
     });
     row1 += ulEnd;
 
     // row 2
     let row2 = ul5x;
     skillsRow2.map(skill => {
-        row2 += "<li><div><img src='" + imgFolder + skill.toLowerCase() + imgType + "' alt='" + skill + "' lazyload='on'><h1>" + skill + "</h1></div></li>";
+        row2 += "<li><div><img src='" + imgFolder + skill.toLowerCase() + imgType + "' alt='" + skill + "' class='fadeIn' lazyload='on'><h1>" + skill + "</h1></div></li>";
     });
     row2 += ulEnd;
 
     // row 3
     let row3 = ul6x;
     skillsRow3.map(skill => {
-        row3 += "<li><div><img src='" + imgFolder + skill.toLowerCase() + imgType + "' alt='" + skill + "' lazyload='on'><h1>" + skill + "</h1></div></li>";
+        row3 += "<li><div><img src='" + imgFolder + skill.toLowerCase() + imgType + "' alt='" + skill + "' class='fadeIn' lazyload='on'><h1>" + skill + "</h1></div></li>";
     });
     row3 += ulEnd;
 
     // row 4
     let row4 = ul5x;
     skillsRow4.map(skill => {
-        row4 += "<li><div><img src='" + imgFolder + skill.toLowerCase() + imgType + "' alt='" + skill + "' lazyload='on'><h1>" + skill + "</h1></div></li>";
+        row4 += "<li><div><img src='" + imgFolder + skill.toLowerCase() + imgType + "' alt='" + skill + "' class='fadeIn' lazyload='on'><h1>" + skill + "</h1></div></li>";
     });
     row4 += ulEnd;
 
     // row 5
     let row5 = ul6x;
     skillsRow5.map(skill => {
-        row5 += "<li><div><img src='" + imgFolder + skill.toLowerCase() + imgType + "' alt='" + skill + "' lazyload='on'><h1>" + skill + "</h1></div></li>";
+        row5 += "<li><div><img src='" + imgFolder + skill.toLowerCase() + imgType + "' alt='" + skill + "' class='fadeIn' lazyload='on'><h1>" + skill + "</h1></div></li>";
     });
     row5 += ulEnd;
 
