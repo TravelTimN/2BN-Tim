@@ -1,8 +1,7 @@
-$(document).ready(function () {
+$(document).ready(() => {
 
     // portfolio details
-    let portfolio = [
-        {
+    let portfolio = [{
             course: "Code Institute",
             project: "Milestone-01",
             name: "User-Centric Frontend Development",
@@ -69,7 +68,6 @@ $(document).ready(function () {
     let imgs_skills = "static/img/skills/";
     let imgs_portfolio = "static/img/portfolio/";
     let div_portfolio = $("#portfolio");
-    let ul_portfolio = "<ul class='portfolio-list text-shadow'>";
     let li_project = "";
 
     // map each project to own <li> item
@@ -81,14 +79,16 @@ $(document).ready(function () {
         li_project += "<a href='" + project.link + "' class='btn' target='_blank'><i class='fas fa-link right' aria-hidden='true'></i>LIVE</a>";
         li_project += "</figcaption></figure><ul class='chip-container center-align'>";
         // create 'chip' <div> for each tool used
-        for(var i in project.chips) {
-            li_project += "<li class='chip fadeIn'><img src='" + imgs_skills + project.chips[i].toLowerCase() + imgType + "' alt='" + project.chips[i] + "'>" + project.chips[i] +"</li>";
+        for (var i in project.chips) {
+            li_project += "<li class='chip fadeIn'><img src='" + imgs_skills +
+                project.chips[i].toLowerCase() + imgType + "' alt='" + project.chips[i] + "'>" +
+                project.chips[i] + "</li>";
         }
         li_project += "</ul></li>";
     });
 
     // add the <li> items to the main <ul>
-    ul_portfolio += li_project + "</ul>";
+    let ul_portfolio = "<ul class='portfolio-list text-shadow'>" + li_project + "</ul>";
 
     // // append <ul> to #portfolio div
     $(div_portfolio).append(ul_portfolio);

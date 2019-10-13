@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(() => {
 
     // materialize
     function initMaterialize() {
@@ -20,7 +20,7 @@ $(document).ready(function () {
     });
 
     // animate <developer> in header
-    setTimeout(function () {
+    setTimeout(() => {
         let developer = ["<developer>"];
         let typeChar = function () {
             $("#developer").append(word[char++]);
