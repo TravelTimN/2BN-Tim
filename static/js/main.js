@@ -65,6 +65,19 @@ $(document).ready(() => {
     $window.on("scroll resize", check_if_in_view);
     $window.trigger("scroll");
 
+    // if Windows detected, use image, otherwise use Emoji (not supported on Windows - yet)
+    if (navigator.appVersion.indexOf("Win")!=-1) {
+        $(".flag-us").html("<img src='static/img/flag-us.png' alt='USA' lazyload='on'>");
+        $(".flag-de").html("<img src='static/img/flag-de.png' alt='Germany' lazyload='on'>");
+        $(".flag-scot").html("<img src='static/img/flag-scot.png' alt='Scotland' lazyload='on'>");
+        $(".flag-ie").html("<img src='static/img/flag-ie.png' alt='Ireland' lazyload='on'>");
+    } else {
+        $(".flag-us").html("🇺🇸");
+        $(".flag-de").html("🇩🇪");
+        $(".flag-scot").html("🏴󠁧󠁢󠁳󠁣󠁴󠁿");
+        $(".flag-ie").html("🇮🇪");
+    };
+
     // get current year for Copyright
     let year = new Date().getFullYear();
     if (year == 2019) {
