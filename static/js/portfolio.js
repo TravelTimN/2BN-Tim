@@ -45,7 +45,7 @@ $(document).ready(() => {
             image: "bearly-escaped",
             title: "Bearly Escaped",
             course: "",
-            project: "",
+            project: "Escape Room concept website",
             name: "Bearly Escaped",
             repo: "https://github.com/TravelTimN/bearly-escaped",
             link: "https://traveltimn.github.io/bearly-escaped",
@@ -54,7 +54,7 @@ $(document).ready(() => {
         {
             title: "Bauhaus100",
             course: "",
-            project: "",
+            project: "Celebrating 100 years of Bauhaus Design with CSS Grid",
             name: "Bauhaus100",
             image: "bauhaus100",
             repo: "https://github.com/TravelTimN/bauhaus100",
