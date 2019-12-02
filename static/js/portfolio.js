@@ -42,6 +42,16 @@ $(document).ready(() => {
             "chips": ["HTML", "CSS", "JavaScript", "jQuery", "Materialize", "Heroku", "Python", "Django", "PostgreSQL", "Stripe", "AWS", "TravisCI"]
         },
         {
+            image: "simon-game",
+            title: "Simon Memory Game",
+            course: "",
+            project: "JavaScript memory game",
+            name: "Simon Memory Game",
+            repo: "https://github.com/TravelTimN/simon-game",
+            link: "https://traveltimn.github.io/simon-game",
+            "chips": ["HTML", "CSS", "JavaScript"]
+        },
+        {
             image: "bearly-escaped",
             title: "Bearly Escaped",
             course: "",
