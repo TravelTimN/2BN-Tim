@@ -49,7 +49,7 @@ $(document).ready(() => {
             name: "Simon Memory Game",
             repo: "https://github.com/TravelTimN/simon-game",
             link: "https://traveltimn.github.io/simon-game",
-            "chips": ["HTML", "CSS", "JavaScript"]
+            "chips": ["HTML", "CSS", "JavaScript", "Jasmine"]
         },
         {
             image: "bearly-escaped",
