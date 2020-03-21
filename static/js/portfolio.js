@@ -52,6 +52,16 @@ $(document).ready(() => {
             "chips": ["HTML", "CSS", "JavaScript", "Jasmine"]
         },
         {
+            image: "data-dashboard",
+            title: "Data Dashboard",
+            course: "",
+            project: "JavaScript data dashboard",
+            name: "Data Dashboard",
+            repo: "https://github.com/TravelTimN/dc-d3-top-eu-restaurants",
+            link: "https://traveltimn.github.io/dc-d3-top-eu-restaurants/",
+            "chips": ["HTML", "CSS", "JavaScript", "jQuery", "D3js", "DCjs", "LeafletJS"]
+        },
+        {
             image: "bearly-escaped",
             title: "Bearly Escaped",
             course: "",
