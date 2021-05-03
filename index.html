@@ -9,28 +9,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
     <meta name="theme-color" content="#01579B">
     <meta name="author" content="Tim Nelson">
-    <meta name="description" content="Tim Nelson | Software Developer and Tutor | Dublin, Ireland">
+    <meta name="description" content="Tim Nelson | Software Developer and Mentor | Dublin, Ireland">
     <meta name="url" content="https://tim.2bn.dev">
     <meta property="og:title" content="Tim Nelson">
-    <meta property="og:description" content="Tim Nelson | Software Developer and Tutor | Dublin, Ireland">
+    <meta property="og:description" content="Tim Nelson | Software Developer and Mentor | Dublin, Ireland">
     <meta property="og:image" content="https://tim.2bn.dev/static/img/tim-nelson.png">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tim.2bn.dev">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Tim Nelson">
-    <meta name="twitter:description" content="Tim Nelson | Software Developer and Tutor | Dublin, Ireland">
+    <meta name="twitter:description" content="Tim Nelson | Software Developer and Mentor | Dublin, Ireland">
     <meta name="twitter:image" content="https://tim.2bn.dev/static/img/tim-nelson.png">
 
     <!-- LINKS -->
-    <link rel='icon' sizes="192x192" href="static/img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-        type="text/css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"
-        type="text/css">
+    <link rel="icon" sizes="192x192" href="static/img/favicon.png" type="image/x-icon">
+    <link rel="preload" as="font" href="static/fonts/fa-brands-400.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="static/fonts/fa-regular-400.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="static/fonts/fa-solid-900.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet preload" href="static/css/materialize.min.css">
+    <link rel="stylesheet preload" href="static/css/font-awesome.css">
     <link rel="stylesheet" href="static/css/style.css" type="text/css">
 
-    <title>Tim Nelson | Software Developer and Tutor</title>
+    <title>Tim Nelson | Software Developer and Mentor</title>
 </head>
 
 <body id="top">
@@ -69,7 +69,7 @@
             <div class="brand-logo hide-on-large-only left light-blue-text text-shadow" title="Tim Nelson">
                 <small class="white-text">&lt;</small><span>T</span><span class="hide-span">im&nbsp;</span><span>N</span><span class="hide-span">elson</span><small class="white-text">&gt;</small>
             </div>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger right">
+            <a href="#" data-target="mobile-demo" title="Menu" class="sidenav-trigger right">
                 <i class="fas fa-bars fa-lg" aria-hidden="true"></i>
             </a>
             <ul class="hide-on-med-and-down upper">
@@ -82,8 +82,6 @@
                 <li><a href="#skills" title="Skills" id="navlink-skills">Skills</a></li>
                 <li class="bullet">•</li>
                 <li><a href="#contact" title="Contact" id="navlink-contact">Contact</a></li>
-                <!-- <li class="bullet">•</li> -->
-                <!-- <li><a href="#resume" title="Résumé" id="navlink-resume">Résumé</a></li> -->
             </ul>
         </div>
     </nav>
@@ -168,15 +166,6 @@
         <li>
             <div class="divider blue"></div>
         </li>
-        <!-- <li class="sidenav-close">
-            <a href="#resume">
-                <i class="fas fa-file-download fa-lg fa-fw" aria-hidden="true"></i>
-                <span class="bold upper">Résumé</span>
-            </a>
-        </li> -->
-        <!-- <li>
-            <div class="divider blue"></div>
-        </li> -->
 
         <li class="sidenav-footer grey darken-4"></li>
     </ul>
@@ -197,7 +186,7 @@
                         <br>
                         <span class="font-permanent-marker">Tim Nelson</span>
                         <br>
-                        <h6><em>software developer<br>and tutor</em></h6>
+                        <h6><em>software developer<br>and mentor</em></h6>
                     </div>
                 </div>
                 <div class="col s12 m6 l7 grey-text text-lighten-4 fadeRight">
@@ -208,14 +197,14 @@
                         So, who is Tim Nelson?
                     </p>
                     <ul>
-                        <li>originally from the USA <span class="flag-us"></span></li>
-                        <li>studied in Germany <span class="flag-de"></span></li>
-                        <li>married a Scotsman <span class="flag-scot"></span></li>
-                        <li>living in Ireland <span class="flag-ie"></span></li>
+                        <li>originally from the USA <span id="flag-us"></span></li>
+                        <li>studied in Germany <span id="flag-de"></span></li>
+                        <li>married a Scotsman <span id="flag-scot"></span></li>
+                        <li>living in Ireland <span id="flag-ie"></span></li>
                         <li>an adventurous bearded nomad</li>
                         <li>an avid travel and technology geek</li>
                         <li>a scrumptious cookie monster</li>
-                        <li>a full-stack software developer and tutor</li>
+                        <li>a full-stack software developer and mentor</li>
                     </ul>
                     <p>
                         I graduated high school with both
@@ -239,7 +228,7 @@
                         <a href="https://codeinstitute.net/full-stack-software-development-diploma/" target="_blank" rel="noopener">Code Institute</a>,
                         and increased my skills ten-fold! See below for additional <a href="#skills">skills</a>. I graduated with an average 97% and
                         <a href="https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/13614390" target="_blank" rel="noopener">First Class Honors diploma</a>,
-                        which is credit-rated by Edinburgh Napier University. After receiving my diploma, I started working for Code Institute as a Software Developer and Tutor!
+                        which is credit-rated by Edinburgh Napier University. After receiving my diploma, I started working for Code Institute as a Software Developer and Tutor/Mentor!
                     </p>
                 </div>
             </div>
@@ -284,13 +273,13 @@
             </div>
             <div class="col s12 m4">
                 <h1>
-                    <a href="https://www.linkedin.com/in/travel-tim-nelson" target="_blank" rel="noopener">
+                    <a href="https://www.linkedin.com/in/travel-tim-nelson" title="LinkedIn" target="_blank" rel="noopener">
                         <i class="fab fa-linkedin-in fa-fw"></i>
                     </a>
-                    <a href="https://github.com/TravelTimN" target="_blank" rel="noopener">
+                    <a href="https://github.com/TravelTimN" title="GitHub" target="_blank" rel="noopener">
                         <i class="fab fa-github fa-fw"></i>
                     </a>
-                    <a href="https://www.youtube.com/c/TimNelsonTravels" target="_blank" rel="noopener">
+                    <a href="https://www.youtube.com/c/TimNelsonTravels" title="YouTube" target="_blank" rel="noopener">
                         <i class="fab fa-youtube fa-fw"></i>
                     </a>
                 </h1>
@@ -310,9 +299,7 @@
     </footer>
 
     <!-- SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="static/js/materialize.min.js"></script>
     <script src="static/js/navbar.js"></script>
     <script src="static/js/portfolio.js"></script>
     <script src="static/js/skills.js"></script>
