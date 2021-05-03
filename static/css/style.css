@@ -140,6 +140,7 @@ header {
 .layer img {
     position: absolute;
     width: 100vw;
+    height: auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -357,6 +358,7 @@ section {
 
 .parallax-container img {
     width: 100vw;
+    height: auto;
 }
 
 /*-----------------------------------------*/
@@ -379,6 +381,7 @@ section {
 .polaroid img {
     border-radius: 4px;
     width: fit-content;
+    height: auto;
 }
 
 .polaroid .font-permanent-marker {
@@ -485,6 +488,7 @@ kbd {
 
 #about ul li img {
     max-height: 12px;
+    width: auto;
 }
 
 .html-color, .css-color, .js-color, .py-color, .ps-color, .ai-color, .ae-color, .sql-color {
@@ -492,7 +496,7 @@ kbd {
 }
 
 .html-color {color: #f16529;}
-.css-color {color: #2965f1;}
+.css-color {color: #039be5;}
 .js-color {color: #ffda3e;}
 .sql-color {color: rgba(var(--white), 1);}
 .ps-color, .ai-color, .ae-color {padding: 1px 4px; white-space: nowrap;}
@@ -532,6 +536,7 @@ kbd {
 
 .portfolio-list li figure img {
     width: 100%;
+    height: auto;
     border-radius: 8px;
     vertical-align: middle;
     transition: var(--transAll);
@@ -570,6 +575,8 @@ kbd {
 }
 
 .portfolio-list li figure:hover img {
+    width: auto;
+    height: auto;
     transform: scale(1.25);
     opacity: 0.5;
 }
@@ -604,6 +611,8 @@ kbd {
 }
 
 .chip-container li.chip img {
+    width: 32px;
+    height: 32px;
     background-color: rgba(var(--greyLight4), 1);
 }
 
@@ -661,6 +670,7 @@ kbd {
 .hexagons-5x li img {
     left: -100%;
     right: -100%;
+    width: auto;
     height: 100%;
     margin: 0 auto;
     background-color: rgba(var(--greyLight4), 1);
