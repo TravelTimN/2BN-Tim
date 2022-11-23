@@ -1,7 +1,8 @@
 /* jshint esversion: 8 */
 
 // portfolio details
-let portfolio = [{
+let portfolio = [
+    {
         title: "Paul M Music",
         course: "Code Institute",
         project: "Milestone-01",
@@ -28,7 +29,7 @@ let portfolio = [{
         name: "Data-Centric Development",
         image: "milestone04",
         repo: "https://github.com/TravelTimN/ci-milestone04-dcd",
-        link: "https://desserts-2bn.herokuapp.com",
+        link: "https://tim-ms4.2bn.dev/",
         chips: ["HTML", "CSS", "JavaScript", "jQuery", "Materialize", "Heroku", "Python", "Flask", "MongoDB"]
     },
     {
@@ -38,48 +39,78 @@ let portfolio = [{
         name: "Full-Stack Frameworks",
         image: "milestone05",
         repo: "https://github.com/TravelTimN/ci-milestone05-fsfw",
-        link: "https://unicorn-attractor-2bn.herokuapp.com",
+        link: "https://tim-ms5.2bn.dev/",
         chips: ["HTML", "CSS", "JavaScript", "jQuery", "Materialize", "Heroku", "Python", "Django", "PostgreSQL", "Stripe", "AWS", "TravisCI"]
     },
     {
-        image: "simon-game",
         title: "Simon Memory Game",
         course: "",
         project: "JavaScript memory game",
         name: "Simon Memory Game",
+        image: "simon-game",
         repo: "https://github.com/TravelTimN/simon-game",
         link: "https://traveltimn.github.io/simon-game",
         chips: ["HTML", "CSS", "JavaScript", "Jasmine"]
     },
     {
-        image: "data-dashboard",
         title: "Data Dashboard",
         course: "",
         project: "JavaScript data dashboard",
         name: "Data Dashboard",
+        image: "data-dashboard",
         repo: "https://github.com/TravelTimN/dc-d3-top-eu-restaurants",
         link: "https://traveltimn.github.io/dc-d3-top-eu-restaurants",
         chips: ["HTML", "CSS", "JavaScript", "jQuery", "D3js", "DCjs", "LeafletJS"]
     },
     {
-        image: "bearly-escaped",
         title: "Bearly Escaped",
         course: "",
         project: "Escape Room concept website",
         name: "Bearly Escaped",
+        image: "bearly-escaped",
         repo: "https://github.com/TravelTimN/bearly-escaped",
         link: "https://traveltimn.github.io/bearly-escaped",
         chips: ["HTML", "CSS", "JavaScript", "jQuery"]
     },
     {
-        image: "lingo-bingo",
         title: "Lingo Bingo",
         course: "",
         project: "Language Learning Bingo App",
         name: "Lingo Bingo",
+        image: "lingo-bingo",
         repo: "https://github.com/TravelTimN/lingo-bingo",
         link: "https://tim.2bn.dev/lingo-bingo",
         chips: ["HTML", "CSS", "JavaScript"]
+    },
+    {
+        title: "Iraqi Kurdistan Guide",
+        course: "",
+        project: "Tour Guide in Kurdistan",
+        name: "Iraqi Kurdistan Guide",
+        image: "ikg",
+        repo: "https://github.com/TravelTimN/iraqikurdistanguide",
+        link: "https://kurdistan.2bn.dev/",
+        chips: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap", "Python", "Django", "PostgreSQL"]
+    },
+    {
+        title: "Binge Traveller Mike",
+        course: "",
+        project: "Mike Murtagh's Travel Blog",
+        name: "Binge Traveller Mike",
+        image: "binge-traveller",
+        repo: "https://github.com/TravelTimN/binge-traveller-mike",
+        link: "",
+        chips: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap", "Python", "Django", "PostgreSQL"]
+    },
+    {
+        title: "CI Mentor Quiz",
+        course: "",
+        project: "Code Institute Mentor Quizzes",
+        name: "CI Mentor Quiz",
+        image: "mentor-quiz",
+        repo: "https://github.com/TravelTimN/ci-mentor-quiz",
+        link: "https://ci-mentor-quiz.herokuapp.com/",
+        chips: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap", "Heroku", "Python", "Django", "PostgreSQL"]
     },
     {
         title: "Bauhaus100",
@@ -90,6 +121,16 @@ let portfolio = [{
         repo: "https://github.com/TravelTimN/bauhaus100",
         link: "https://traveltimn.github.io/bauhaus100",
         chips: ["HTML", "CSS"]
+    },
+    {
+        title: "Battle Blox",
+        course: "",
+        project: "Minecraft Multiplayer Game (Java)",
+        name: "Battle Blox",
+        image: "battle-blox",
+        repo: "https://github.com/TravelTimN/minecraft-battle-blox-bedrock",
+        link: "",
+        chips: ["JavaScript"]
     },
     {
         title: "Christmas 2013",
