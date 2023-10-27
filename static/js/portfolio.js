@@ -89,7 +89,7 @@ let portfolio = [
         name: "Iraqi Kurdistan Guide",
         image: "ikg",
         repo: "https://github.com/TravelTimN/iraqikurdistanguide",
-        link: "https://kurdistan.2bn.dev/",
+        link: "https://kurdistan.2bn.dev",
         chips: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap", "Python", "Django", "PostgreSQL"]
     },
     {
@@ -99,7 +99,7 @@ let portfolio = [
         name: "Binge Traveller Mike",
         image: "binge-traveller",
         repo: "https://github.com/TravelTimN/binge-traveller-mike",
-        link: "",
+        link: "https://binge-traveller.2bn.dev",
         chips: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap", "Python", "Django", "PostgreSQL"]
     },
     {
@@ -109,8 +109,18 @@ let portfolio = [
         name: "CI Mentor Quiz",
         image: "mentor-quiz",
         repo: "https://github.com/TravelTimN/ci-mentor-quiz",
-        link: "https://ci-mentor-quiz.herokuapp.com/",
+        link: "",
         chips: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap", "Heroku", "Python", "Django", "PostgreSQL"]
+    },
+    {
+        title: "Markdown Builder",
+        course: "",
+        project: "Code Institute Projects",
+        name: "Markdown Builder",
+        image: "markdown-builder",
+        repo: "https://github.com/TravelTimN/markdown-builder",
+        link: "https://tim.2bn.dev/markdown-builder/",
+        chips: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"]
     },
     {
         title: "Bauhaus100",
