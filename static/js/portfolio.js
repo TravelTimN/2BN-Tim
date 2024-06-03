@@ -89,7 +89,7 @@ let portfolio = [
         name: "Iraqi Kurdistan Guide",
         image: "ikg",
         repo: "https://github.com/TravelTimN/iraqikurdistanguide",
-        link: "https://kurdistan.2bn.dev",
+        link: "https://www.iraqikurdistanguide.com",
         chips: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap", "Python", "Django", "PostgreSQL"]
     },
     {
@@ -99,7 +99,7 @@ let portfolio = [
         name: "Binge Traveller Mike",
         image: "binge-traveller",
         repo: "https://github.com/TravelTimN/binge-traveller-mike",
-        link: "https://binge-traveller.2bn.dev",
+        link: "",
         chips: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap", "Python", "Django", "PostgreSQL"]
     },
     {
