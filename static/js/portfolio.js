@@ -157,7 +157,7 @@ let portfolio = [
 // map each project to own <li> item
 let li_project = "";
 portfolio.map(project => {
-    li_project += `<li><div class="divider blue"></div><h2 class="center-align">${project.title}</h2><figure class="fadeUp"><img src="static/img/portfolio/${project.image}.png" alt="${project.title}" lazyload="on"><figcaption>`;
+    li_project += `<li><div class="divider blue"></div><h2 class="center-align">${project.title}</h2><figure class="fadeUp"><img src="static/img/portfolio/${project.image}.png" alt="${project.title}" loading="lazy"><figcaption>`;
     if (project.course) {
         li_project += `<h2>${project.course}</h2>`;
     }

@@ -86,10 +86,10 @@ document.onreadystatechange = function () {
         let flagSCOT = document.getElementById("flag-scot");
         let flagIE = document.getElementById("flag-ie");
         if (navigator.appVersion.indexOf("Win") != -1) {
-            flagUS.innerHTML = "<img src='static/img/flag-us.png' alt='USA' lazyload='on'>";
-            flagDE.innerHTML = "<img src='static/img/flag-de.png' alt='Germany' lazyload='on'>";
-            flagSCOT.innerHTML = "<img src='static/img/flag-scot.png' alt='Scotland' lazyload='on'>";
-            flagIE.innerHTML = "<img src='static/img/flag-ie.png' alt='Ireland' lazyload='on'>";
+            flagUS.innerHTML = "<img src='static/img/flag-us.png' alt='USA' loading='lazy'>";
+            flagDE.innerHTML = "<img src='static/img/flag-de.png' alt='Germany' loading='lazy'>";
+            flagSCOT.innerHTML = "<img src='static/img/flag-scot.png' alt='Scotland' loading='lazy'>";
+            flagIE.innerHTML = "<img src='static/img/flag-ie.png' alt='Ireland' loading='lazy'>";
         } else {
             flagUS.innerHTML = "🇺🇸";
             flagDE.innerHTML = "🇩🇪";

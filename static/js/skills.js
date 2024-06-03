@@ -25,35 +25,35 @@ let ul_hex5x = "<ul class='hexagons-5x fadeIn'>";
 // row 1
 let row1 = ul_hex6x;
 skillsRow1.map(skill => {
-    row1 += `<li><div><img src="${imgs_skills}${skill.toLowerCase()}${imgType}" alt="${skill}" lazyload="on"><h1>${skill}</h1></div></li>`;
+    row1 += `<li><div><img src="${imgs_skills}${skill.toLowerCase()}${imgType}" alt="${skill}" loading="lazy"><h1>${skill}</h1></div></li>`;
 });
 row1 += "</ul>";
 
 // row 2
 let row2 = ul_hex5x;
 skillsRow2.map(skill => {
-    row2 += `<li><div><img src="${imgs_skills}${skill.toLowerCase()}${imgType}" alt="${skill}" lazyload="on"><h1>${skill}</h1></div></li>`;
+    row2 += `<li><div><img src="${imgs_skills}${skill.toLowerCase()}${imgType}" alt="${skill}" loading="lazy"><h1>${skill}</h1></div></li>`;
 });
 row2 += "</ul>";
 
 // row 3
 let row3 = ul_hex6x;
 skillsRow3.map(skill => {
-    row3 += `<li><div><img src="${imgs_skills}${skill.toLowerCase()}${imgType}" alt="${skill}" lazyload="on"><h1>${skill}</h1></div></li>`;
+    row3 += `<li><div><img src="${imgs_skills}${skill.toLowerCase()}${imgType}" alt="${skill}" loading="lazy"><h1>${skill}</h1></div></li>`;
 });
 row3 += "</ul>";
 
 // row 4
 let row4 = ul_hex5x;
 skillsRow4.map(skill => {
-    row4 += `<li><div><img src="${imgs_skills}${skill.toLowerCase()}${imgType}" alt="${skill}" lazyload="on"><h1>${skill}</h1></div></li>`;
+    row4 += `<li><div><img src="${imgs_skills}${skill.toLowerCase()}${imgType}" alt="${skill}" loading="lazy"><h1>${skill}</h1></div></li>`;
 });
 row4 += "</ul>";
 
 // row 5
 let row5 = ul_hex6x;
 skillsRow5.map(skill => {
-    row5 += `<li><div><img src="${imgs_skills}${skill.toLowerCase()}${imgType}" alt="${skill}" lazyload="on"><h1>${skill}</h1></div></li>`;
+    row5 += `<li><div><img src="${imgs_skills}${skill.toLowerCase()}${imgType}" alt="${skill}" loading="lazy"><h1>${skill}</h1></div></li>`;
 });
 row5 += "</ul>";
 
