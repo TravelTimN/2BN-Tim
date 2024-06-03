@@ -704,10 +704,10 @@ kbd {
     opacity: 1;
 }
 
-.hexagons-6x li:hover,
+/* .hexagons-6x li:hover,
 .hexagons-5x li:hover {
     transform: rotate(660deg) skewY(30deg);
-}
+} */
 
 /*-----------------------------------------*/
 /*------------- FADE EFFECTS --------------*/
