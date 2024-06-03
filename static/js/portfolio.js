@@ -93,14 +93,14 @@ let portfolio = [
         chips: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap", "Python", "Django", "PostgreSQL"]
     },
     {
-        title: "Binge Traveller Mike",
-        course: "",
-        project: "Mike Murtagh's Travel Blog",
-        name: "Binge Traveller Mike",
-        image: "binge-traveller",
-        repo: "https://github.com/TravelTimN/binge-traveller-mike",
-        link: "",
-        chips: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap", "Python", "Django", "PostgreSQL"]
+        title: "CI Hackathon App",
+        course: "Code Institute",
+        project: "Hackathons",
+        name: "Original Developer",
+        image: "ci-hackathons",
+        repo: "https://github.com/Code-Institute-Community/ci-hackathon-app",
+        link: "https://hackathon.codeinstitute.net",
+        chips: ["HTML", "CSS", "JavaScript", "Bootstrap", "Python", "Django", "PostgreSQL"]
     },
     {
         title: "CI Mentor Quiz",
@@ -121,6 +121,16 @@ let portfolio = [
         repo: "https://github.com/TravelTimN/markdown-builder",
         link: "https://tim.2bn.dev/markdown-builder/",
         chips: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"]
+    },
+    {
+        title: "Binge Traveller Mike",
+        course: "",
+        project: "Mike Murtagh's Travel Blog",
+        name: "Binge Traveller Mike",
+        image: "binge-traveller",
+        repo: "https://github.com/TravelTimN/binge-traveller-mike",
+        link: "",
+        chips: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap", "Python", "Django", "PostgreSQL"]
     },
     {
         title: "Bauhaus100",
