@@ -109,7 +109,7 @@ let portfolio = [
         name: "CI Mentor Quiz",
         image: "mentor-quiz",
         repo: "https://github.com/TravelTimN/ci-mentor-quiz",
-        link: "",
+        link: "https://ci-mentor-quiz-e357376a7f02.herokuapp.com",
         chips: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap", "Heroku", "Python", "Django", "PostgreSQL"]
     },
     {
