@@ -3,24 +3,14 @@
 // portfolio details
 let portfolio = [
     {
-        title: "Paul M Music",
-        course: "Code Institute",
-        project: "Milestone-01",
-        name: "User-Centric Frontend Development",
-        image: "milestone01",
-        repo: "https://github.com/TravelTimN/ci-milestone01-ucfd",
-        link: "https://traveltimn.github.io/ci-milestone01-ucfd",
-        chips: ["HTML", "CSS", "JavaScript"]
-    },
-    {
-        title: "IATA Map",
-        course: "Code Institute",
-        project: "Milestone-02",
-        name: "Interactive Frontend Development",
-        image: "milestone02",
-        repo: "https://github.com/TravelTimN/ci-milestone02-ifd",
-        link: "https://traveltimn.github.io/ci-milestone02-ifd",
-        chips: ["HTML", "CSS", "JavaScript", "jQuery", "LeafletJS"]
+        title: "Iraqi Kurdistan Guide",
+        course: "",
+        project: "Tour Guide in Kurdistan",
+        name: "Iraqi Kurdistan Guide",
+        image: "ikg",
+        repo: "https://github.com/TravelTimN/iraqikurdistanguide",
+        link: "https://www.iraqikurdistanguide.com",
+        chips: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap", "Python", "Django", "PostgreSQL"]
     },
     {
         title: "2BN-Desserts",
@@ -33,34 +23,24 @@ let portfolio = [
         chips: ["HTML", "CSS", "JavaScript", "jQuery", "Materialize", "Heroku", "Python", "Flask", "MongoDB"]
     },
     {
-        title: "Unicorn Attractor",
-        course: "Code Institute",
-        project: "Milestone-05",
-        name: "Full-Stack Frameworks",
-        image: "milestone05",
-        repo: "https://github.com/TravelTimN/ci-milestone05-fsfw",
-        link: "https://tim-ms5.2bn.dev/",
-        chips: ["HTML", "CSS", "JavaScript", "jQuery", "Materialize", "Heroku", "Python", "Django", "PostgreSQL", "Stripe", "AWS", "TravisCI"]
+        title: "Lingo Bingo",
+        course: "",
+        project: "Language learning Bingo game",
+        name: "Lingo Bingo",
+        image: "lingo-bingo",
+        repo: "https://github.com/TravelTimN/lingo-bingo",
+        link: "https://tim.2bn.dev/lingo-bingo",
+        chips: ["HTML", "CSS", "JavaScript"]
     },
     {
-        title: "Simon Memory Game",
+        title: "Vexill-Uhm?",
         course: "",
-        project: "JavaScript memory game",
-        name: "Simon Memory Game",
-        image: "simon-game",
-        repo: "https://github.com/TravelTimN/simon-game",
-        link: "https://traveltimn.github.io/simon-game",
-        chips: ["HTML", "CSS", "JavaScript", "Jasmine"]
-    },
-    {
-        title: "Data Dashboard",
-        course: "",
-        project: "JavaScript data dashboard",
-        name: "Data Dashboard",
-        image: "data-dashboard",
-        repo: "https://github.com/TravelTimN/dc-d3-top-eu-restaurants",
-        link: "https://traveltimn.github.io/dc-d3-top-eu-restaurants",
-        chips: ["HTML", "CSS", "JavaScript", "jQuery", "D3js", "DCjs", "LeafletJS"]
+        project: "Guess the Flag game",
+        name: "Vexill-Uhm?",
+        image: "vexill-uhm",
+        repo: "https://github.com/TravelTimN/guess-the-flag",
+        link: "https://traveltimn.github.io/guess-the-flag",
+        chips: ["HTML", "CSS", "JavaScript"]
     },
     {
         title: "Bearly Escaped",
@@ -73,24 +53,14 @@ let portfolio = [
         chips: ["HTML", "CSS", "JavaScript", "jQuery"]
     },
     {
-        title: "Lingo Bingo",
-        course: "",
-        project: "Language Learning Bingo App",
-        name: "Lingo Bingo",
-        image: "lingo-bingo",
-        repo: "https://github.com/TravelTimN/lingo-bingo",
-        link: "https://tim.2bn.dev/lingo-bingo",
-        chips: ["HTML", "CSS", "JavaScript"]
-    },
-    {
-        title: "Iraqi Kurdistan Guide",
-        course: "",
-        project: "Tour Guide in Kurdistan",
-        name: "Iraqi Kurdistan Guide",
-        image: "ikg",
-        repo: "https://github.com/TravelTimN/iraqikurdistanguide",
-        link: "https://www.iraqikurdistanguide.com",
-        chips: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap", "Python", "Django", "PostgreSQL"]
+        title: "IATA Map",
+        course: "Code Institute",
+        project: "Milestone-02",
+        name: "Interactive Frontend Development",
+        image: "milestone02",
+        repo: "https://github.com/TravelTimN/ci-milestone02-ifd",
+        link: "https://traveltimn.github.io/ci-milestone02-ifd",
+        chips: ["HTML", "CSS", "JavaScript", "jQuery", "LeafletJS"]
     },
     {
         title: "CI Hackathon App",
@@ -109,8 +79,8 @@ let portfolio = [
         name: "CI Mentor Quiz",
         image: "mentor-quiz",
         repo: "https://github.com/TravelTimN/ci-mentor-quiz",
-        link: "https://ci-mentor-quiz-e357376a7f02.herokuapp.com",
-        chips: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap", "Heroku", "Python", "Django", "PostgreSQL"]
+        link: "",
+        chips: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap", "Python", "Django", "PostgreSQL"]
     },
     {
         title: "Markdown Builder",
@@ -118,9 +88,59 @@ let portfolio = [
         project: "Code Institute Projects",
         name: "Markdown Builder",
         image: "markdown-builder",
-        repo: "https://github.com/TravelTimN/markdown-builder",
-        link: "https://tim.2bn.dev/markdown-builder/",
-        chips: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"]
+        repo: "https://github.com/TravelTimN/markdown-builder-django",
+        link: "https://markdown.2bn.dev",
+        chips: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap", "Python", "Django", "PostgreSQL"]
+    },
+    {
+        title: "Simon Memory Game",
+        course: "",
+        project: "JavaScript memory game",
+        name: "Simon Memory Game",
+        image: "simon-game",
+        repo: "https://github.com/TravelTimN/simon-game",
+        link: "https://traveltimn.github.io/simon-game",
+        chips: ["HTML", "CSS", "JavaScript", "Jasmine"]
+    },
+    {
+        title: "Unicorn Attractor",
+        course: "Code Institute",
+        project: "Milestone-05",
+        name: "Full-Stack Frameworks",
+        image: "milestone05",
+        repo: "https://github.com/TravelTimN/ci-milestone05-fsfw",
+        link: "https://tim-ms5.2bn.dev/",
+        chips: ["HTML", "CSS", "JavaScript", "jQuery", "Materialize", "Heroku", "Python", "Django", "PostgreSQL", "Stripe", "AWS", "TravisCI"]
+    },
+    {
+        title: "Oregon Trail",
+        course: "",
+        project: "80's survival game",
+        name: "Oregon Trail [incomplete]",
+        image: "oregon-trail",
+        repo: "https://github.com/TravelTimN/oregon-trail-python",
+        link: "",
+        chips: ["Python"]
+    },
+    {
+        title: "Data Dashboard",
+        course: "",
+        project: "JavaScript data dashboard",
+        name: "Data Dashboard",
+        image: "data-dashboard",
+        repo: "https://github.com/TravelTimN/dc-d3-top-eu-restaurants",
+        link: "https://traveltimn.github.io/dc-d3-top-eu-restaurants",
+        chips: ["HTML", "CSS", "JavaScript", "jQuery", "D3js", "DCjs", "LeafletJS"]
+    },
+    {
+        title: "Paul M Music",
+        course: "Code Institute",
+        project: "Milestone-01",
+        name: "User-Centric Frontend Development",
+        image: "milestone01",
+        repo: "https://github.com/TravelTimN/ci-milestone01-ucfd",
+        link: "https://traveltimn.github.io/ci-milestone01-ucfd",
+        chips: ["HTML", "CSS", "JavaScript"]
     },
     {
         title: "Binge Traveller Mike",
@@ -133,14 +153,14 @@ let portfolio = [
         chips: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap", "Python", "Django", "PostgreSQL"]
     },
     {
-        title: "Bauhaus100",
+        title: "2BN-Tweaks",
         course: "",
-        project: "Celebrating 100 years of Bauhaus Design with CSS Grid",
-        name: "Bauhaus100",
-        image: "bauhaus100",
-        repo: "https://github.com/TravelTimN/bauhaus100",
-        link: "https://traveltimn.github.io/bauhaus100",
-        chips: ["HTML", "CSS"]
+        project: "Minecraft Tweaks (Java)",
+        name: "2BN-Tweaks",
+        image: "2bn-tweaks",
+        repo: "https://github.com/TravelTimN/minecraft-2bn-tweaks",
+        link: "",
+        chips: ["JavaScript", "Python"]
     },
     {
         title: "Battle Blox",
@@ -151,6 +171,16 @@ let portfolio = [
         repo: "https://github.com/TravelTimN/minecraft-battle-blox-bedrock",
         link: "",
         chips: ["JavaScript"]
+    },
+    {
+        title: "Bauhaus100",
+        course: "",
+        project: "Celebrating 100 years of Bauhaus Design with CSS Grid",
+        name: "Bauhaus100",
+        image: "bauhaus100",
+        repo: "https://github.com/TravelTimN/bauhaus100",
+        link: "https://traveltimn.github.io/bauhaus100",
+        chips: ["HTML", "CSS"]
     },
     {
         title: "Christmas 2013",
